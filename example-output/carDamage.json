@@ -1,0 +1,785 @@
+{
+    "m_header": {
+        "m_packetFormat": 2021,
+        "m_gameMajorVersion": 1,
+        "m_gameMinorVersion": 4,
+        "m_packetVersion": 1,
+        "m_packetId": 10,
+        "m_sessionTime": 448.93267822265625,
+        "m_frameIdentifier": 20663,
+        "m_playerCarIndex": 0,
+        "m_secondaryPlayerCarIndex": 255
+    },
+    "m_carDamageData": [
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        },
+        {
+            "m_tyresWear": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_brakesDamage": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_frontLeftWingDamage": 0,
+            "m_frontRightWingDamage": 0,
+            "m_rearWingDamage": 0,
+            "m_floorDamage": 0,
+            "m_diffuserDamage": 0,
+            "m_sidepodDamage": 0,
+            "m_drsFault": 0,
+            "m_gearBoxDamage": 0,
+            "m_engineDamage": 0,
+            "m_engineMGUHWear": 0,
+            "m_engineESWear": 0,
+            "m_engineCEWear": 0,
+            "m_engineICEWear": 0,
+            "m_engineMGUKWear": 0,
+            "m_engineTCWear": 0
+        }
+    ]
+}

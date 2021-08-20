@@ -1,0 +1,965 @@
+{
+    "m_header": {
+        "m_packetFormat": 2021,
+        "m_gameMajorVersion": 1,
+        "m_gameMinorVersion": 4,
+        "m_packetVersion": 1,
+        "m_packetId": 6,
+        "m_sessionTime": 444.2049255371094,
+        "m_frameIdentifier": 20452,
+        "m_playerCarIndex": 0,
+        "m_secondaryPlayerCarIndex": 255
+    },
+    "m_carTelemetryData": [
+        {
+            "m_speed": 206,
+            "m_throttle": 0,
+            "m_steer": 0.01114752609282732,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 6,
+            "m_engineRPM": 9427,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                100,
+                100,
+                100,
+                100
+            ],
+            "m_engineTemperature": 25700,
+            "m_tyresPressure": [
+                8.301208024752357e-39,
+                23.573814392089844,
+                23.573814392089844,
+                22.655353546142578
+            ],
+            "m_surfaceType": [
+                42,
+                62,
+                181,
+                65
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 8,
+            "m_revLightsBitValue": 16169,
+            "m_brakesTemperature": [
+                1,
+                0,
+                0,
+                96
+            ],
+            "m_tyresSurfaceTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_engineTemperature": 21845,
+            "m_tyresPressure": [
+                14661502107648,
+                8.297606687699042e-39,
+                21.5,
+                21.5
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                184,
+                65
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 2.357544536380072e-41,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 32768,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                204,
+                16
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                64
+            ],
+            "m_tyresInnerTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_engineTemperature": 35,
+            "m_tyresPressure": [
+                14637285244928,
+                14661502107648,
+                8.297606687699042e-39,
+                21.5
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                172,
+                65
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 2.357544536380072e-41,
+            "m_steer": 2.357544536380072e-41,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 128,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                204,
+                16
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                64
+            ],
+            "m_engineTemperature": 35,
+            "m_tyresPressure": [
+                3.214291410975944e-39,
+                14637285244928,
+                14661502107648,
+                8.297606687699042e-39
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                172,
+                65
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 2.3558629782228825e-41,
+            "m_steer": 2.357544536380072e-41,
+            "m_brake": 2.357544536380072e-41,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                128
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                171,
+                13
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                3.23720123956919e-39,
+                3.214291410975944e-39,
+                14637285244928,
+                14661502107648
+            ],
+            "m_surfaceType": [
+                90,
+                90,
+                90,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 2.3558629782228825e-41,
+            "m_steer": 2.3558629782228825e-41,
+            "m_brake": 2.357544536380072e-41,
+            "m_clutch": 184,
+            "m_gear": 65,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                128
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                6.025583396596713e-42,
+                3.23720123956919e-39,
+                3.214291410975944e-39,
+                14637285244928
+            ],
+            "m_surfaceType": [
+                90,
+                90,
+                85,
+                85
+            ]
+        },
+        {
+            "m_speed": 23130,
+            "m_throttle": 1.2611686178923354e-43,
+            "m_steer": 2.3558629782228825e-41,
+            "m_brake": 2.3558629782228825e-41,
+            "m_clutch": 184,
+            "m_gear": 65,
+            "m_engineRPM": 0,
+            "m_drs": 184,
+            "m_revLightsPercent": 65,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                128
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                6.025583396596713e-42,
+                3.23720123956919e-39,
+                3.214291410975944e-39
+            ],
+            "m_surfaceType": [
+                35,
+                0,
+                85,
+                85
+            ]
+        },
+        {
+            "m_speed": 23130,
+            "m_throttle": 15363842120876032,
+            "m_steer": 1.2611686178923354e-43,
+            "m_brake": 2.3558629782228825e-41,
+            "m_clutch": 172,
+            "m_gear": 65,
+            "m_engineRPM": 0,
+            "m_drs": 184,
+            "m_revLightsPercent": 65,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                4.591774807899561e-41,
+                0,
+                5.32353286596998e-42,
+                3.23720123956919e-39
+            ],
+            "m_surfaceType": [
+                35,
+                0,
+                35,
+                0
+            ]
+        },
+        {
+            "m_speed": 35,
+            "m_throttle": 15363842120876032,
+            "m_steer": 15363842120876032,
+            "m_brake": 1.2611686178923354e-43,
+            "m_clutch": 172,
+            "m_gear": 65,
+            "m_engineRPM": 0,
+            "m_drs": 172,
+            "m_revLightsPercent": 65,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                4.591774807899561e-41,
+                0,
+                6.025583396596713e-42
+            ],
+            "m_surfaceType": [
+                0,
+                64,
+                35,
+                0
+            ]
+        },
+        {
+            "m_speed": 35,
+            "m_throttle": 3.214291410975944e-39,
+            "m_steer": 15363842120876032,
+            "m_brake": 15363842120876032,
+            "m_clutch": 90,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 172,
+            "m_revLightsPercent": 65,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                4.591774807899561e-41,
+                0
+            ],
+            "m_surfaceType": [
+                171,
+                13,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 16384,
+            "m_throttle": 3.214291410975944e-39,
+            "m_steer": 3.214291410975944e-39,
+            "m_brake": 15363842120876032,
+            "m_clutch": 85,
+            "m_gear": 85,
+            "m_engineRPM": 23130,
+            "m_drs": 90,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                184,
+                65,
+                0,
+                0
+            ],
+            "m_engineTemperature": 16824,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                4.591774807899561e-41
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 4300,
+            "m_throttle": 2,
+            "m_steer": 3.214291410975944e-39,
+            "m_brake": 3.214291410975944e-39,
+            "m_clutch": 85,
+            "m_gear": 85,
+            "m_engineRPM": 23130,
+            "m_drs": 85,
+            "m_revLightsPercent": 85,
+            "m_revLightsBitValue": 23130,
+            "m_brakesTemperature": [
+                90,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_engineTemperature": 16824,
+            "m_tyresPressure": [
+                23,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                128,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 8.04638123325432e-29,
+            "m_steer": 2,
+            "m_brake": 3.214291410975944e-39,
+            "m_clutch": 35,
+            "m_gear": 0,
+            "m_engineRPM": 35,
+            "m_drs": 85,
+            "m_revLightsPercent": 85,
+            "m_revLightsBitValue": 23130,
+            "m_brakesTemperature": [
+                85,
+                85,
+                90,
+                90
+            ],
+            "m_tyresSurfaceTemperature": [
+                90,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                172,
+                65,
+                0,
+                0
+            ],
+            "m_engineTemperature": 16812,
+            "m_tyresPressure": [
+                23,
+                23,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 32768,
+            "m_throttle": 0,
+            "m_steer": 8.04638123325432e-29,
+            "m_brake": 2,
+            "m_clutch": 35,
+            "m_gear": 0,
+            "m_engineRPM": 35,
+            "m_drs": 35,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 8960,
+            "m_brakesTemperature": [
+                85,
+                85,
+                90,
+                90
+            ],
+            "m_tyresSurfaceTemperature": [
+                85,
+                85,
+                90,
+                90
+            ],
+            "m_tyresInnerTemperature": [
+                90,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 16812,
+            "m_tyresPressure": [
+                21.5,
+                23,
+                23,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 1.0493342306183706e-14,
+            "m_clutch": 1,
+            "m_gear": 0,
+            "m_engineRPM": 24576,
+            "m_drs": 35,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 8960,
+            "m_brakesTemperature": [
+                35,
+                0,
+                35,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                85,
+                85,
+                90,
+                90
+            ],
+            "m_tyresInnerTemperature": [
+                85,
+                85,
+                90,
+                90
+            ],
+            "m_engineTemperature": 90,
+            "m_tyresPressure": [
+                21.5,
+                21.5,
+                23,
+                23
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "m_speed": 0,
+            "m_throttle": 0,
+            "m_steer": 0,
+            "m_brake": 0,
+            "m_clutch": 0,
+            "m_gear": 0,
+            "m_engineRPM": 0,
+            "m_drs": 0,
+            "m_revLightsPercent": 0,
+            "m_revLightsBitValue": 0,
+            "m_brakesTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresSurfaceTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_tyresInnerTemperature": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_engineTemperature": 0,
+            "m_tyresPressure": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "m_surfaceType": [
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "m_buttonStatus": 0,
+    "m_mfdPanelIndex": 0,
+    "m_mfdPanelIndexSecondaryPlayer": 0,
+    "m_suggestedGear": 0
+}

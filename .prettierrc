@@ -1,0 +1,6 @@
+{
+  "semi": false,
+  "htmlWhitespaceSensitivity": "strict",
+  "tsBracketSameLine": true,
+  "arrowParens": "avoid"
+}

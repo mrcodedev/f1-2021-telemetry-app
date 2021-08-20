@@ -1,0 +1,764 @@
+{
+    "m_header": {
+        "m_packetFormat": 2021,
+        "m_gameMajorVersion": 1,
+        "m_gameMinorVersion": 4,
+        "m_packetVersion": 1,
+        "m_packetId": 11,
+        "m_sessionTime": 214.2759246826172,
+        "m_frameIdentifier": 9994,
+        "m_playerCarIndex": 0,
+        "m_secondaryPlayerCarIndex": 255
+    },
+    "m_carIdx": 0,
+    "m_numLaps": 2,
+    "m_numTyreStints": 1,
+    "m_bestLapTimeLapNum": 199,
+    "m_bestSector1LapNum": 199,
+    "m_bestSector2LapNum": 199,
+    "m_bestSector3LapNum": 199,
+    "m_lapHistoryData": [
+        {
+            "m_lapTimeInMS": 92013,
+            "m_sector1TimeInMS": 29693,
+            "m_sector2TimeInMS": 40408,
+            "m_sector3TimeInMS": 21910,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 28280,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 12
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        },
+        {
+            "m_lapTimeInMS": 0,
+            "m_sector1TimeInMS": 0,
+            "m_sector2TimeInMS": 0,
+            "m_sector3TimeInMS": 0,
+            "m_lapValidBitFlags": 0
+        }
+    ],
+    "m_tyreStintsHistoryData": [
+        {
+            "m_endLap": 255,
+            "m_tyreActualCompound": 17,
+            "m_tyreVisualCompound": 16
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        },
+        {
+            "m_endLap": 0,
+            "m_tyreActualCompound": 0,
+            "m_tyreVisualCompound": 0
+        }
+    ]
+}

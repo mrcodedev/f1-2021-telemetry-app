@@ -1,0 +1,72 @@
+{
+  "name": "f1-2021-telemetry",
+  "version": "1.0.0",
+  "description": "F1 2021 telemetry with TS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcodedev/f1-2021-telemetry-js.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "start": "npm run build && node build/src/playground/index.js",
+    "build": "tsc",
+    "build:link": "npm run build && npm link",
+    "type-check:watch": "npm run type-check -- --watch",
+    "type-check": "tsc --noEmit",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "lint": "gts lint",
+    "prettier": "npm run prettier:base -- --write",
+    "prettier:check": "npm run prettier:base -- -c",
+    "prettier:base": "prettier '**/*{.ts,.tsx,.css,.pcss,.html}'"
+  },
+  "dependencies": {
+    "binary-parser": "1.9.2",
+    "struct": "^0.0.12"
+  },
+  "devDependencies": {
+    "@altafonte/eslint-config": "^1.1.1",
+    "@types/binary-parser": "1.5.1",
+    "@types/node": "^14.17.5",
+    "eslint": "7.31.0",
+    "eslint-plugin-node": "^11.1.0",
+    "gts": "^3.1.0",
+    "husky": "7.0.1",
+    "lint-staged": "11.0.1",
+    "prettier": "^2.3.2",
+    "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "gts fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "F1",
+    "F1",
+    "2021",
+    "telemetry",
+    "simracing"
+  ],
+  "author": "MrCodeDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrcodedev/f1-2021-telemetry-js/issues"
+  },
+  "homepage": "https://github.com/mrcodedev/f1-2021-telemetry-js#readme",
+  "eslintConfig": {
+    "extends": "@altafonte/eslint-config"
+  }
+}

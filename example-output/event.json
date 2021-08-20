@@ -1,0 +1,17 @@
+{
+    "m_header": {
+        "m_packetFormat": 2021,
+        "m_gameMajorVersion": 1,
+        "m_gameMinorVersion": 4,
+        "m_packetVersion": 1,
+        "m_packetId": 3,
+        "m_sessionTime": 416.3680419921875,
+        "m_frameIdentifier": 19174,
+        "m_playerCarIndex": 0,
+        "m_secondaryPlayerCarIndex": 255
+    },
+    "m_eventStringCode": "BUTN",
+    "Buttons": {
+        "m_buttonStatus": 0
+    }
+}
