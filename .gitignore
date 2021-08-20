@@ -83,6 +83,7 @@ typings/
 dist
 build
 out-tsc
+out-tsc/app
 
 # Gatsby files
 .cache/
