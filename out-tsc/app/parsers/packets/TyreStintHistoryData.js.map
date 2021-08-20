@@ -1,1 +1,0 @@
-{"version":3,"file":"TyreStintHistoryData.js","sourceRoot":"","sources":["../../../../src/parsers/packets/TyreStintHistoryData.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,QAAQ,EAAC,MAAM,aAAa,CAAC;AAErC,MAAM,OAAO,0BAA2B,SAAQ,QAAQ;IACtD;QACE,KAAK,EAAE,CAAA;QACP,IAAI,CAAC,KAAK,CAAC,UAAU,CAAC;aACnB,KAAK,CAAC,sBAAsB,CAAC;aAC7B,KAAK,CAAC,sBAAsB,CAAC,CAAA;IAClC,CAAC;CACF"}
