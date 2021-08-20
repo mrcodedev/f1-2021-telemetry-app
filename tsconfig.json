@@ -1,33 +1,11 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "declaration": false,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es2017",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    // "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "strict": true,
-    "emitDecoratorMetadata": true,
-    "removeComments": true,
-    "jsx": "react",
-    "jsxFactory": "h",
-    "resolveJsonModule": true,
-    "outDir": "./out-tsc/app",
-    "sourceMap": true,
-    "downlevelIteration": true,
-    "paths": {
-      "@models/*": ["models/*"],
-      "@state/*": ["constants/*"],
-    },
-    "baseUrl": "./src"
+    "rootDir": ".",
+    "outDir": "build",
   },
-  "include": ["src", "stencil.config.ts"]
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
 }

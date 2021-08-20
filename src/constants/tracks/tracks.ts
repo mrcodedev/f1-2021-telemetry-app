@@ -1,4 +1,4 @@
-import { Tracks } from "../../models/tracks";
+import { Tracks } from "../../models/constants"
 
 export const TRACKS: Tracks[] = [
   {name: 'Melbourne'},

@@ -1,0 +1,1 @@
+{"version":3,"file":"MarshalZoneParser.js","sourceRoot":"","sources":["../../../../src/parsers/packets/MarshalZoneParser.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,aAAa,CAAA;AAEtC,MAAM,OAAO,iBAAkB,SAAQ,QAAQ;IAC7C;QACE,KAAK,EAAE,CAAC;QACR,IAAI,CAAC,SAAS,CAAC,QAAQ,CAAC,CAAC,OAAO,CAAC,aAAa,CAAC,CAAC,IAAI,CAAC,YAAY,CAAC,CAAA;IACpE,CAAC;CACF"}

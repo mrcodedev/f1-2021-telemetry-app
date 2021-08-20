@@ -1,5 +1,5 @@
 import { Parser } from 'binary-parser';
-import { Parsed } from '@models/parsed';
+import { Parsed } from '../models/general';
 
 export class F1Parser extends Parser {
   /**

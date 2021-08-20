@@ -1,4 +1,4 @@
-import { Drivers } from "../../models/drivers";
+import { Drivers } from "../../models/constants"
 
 export const DRIVERS: {[index: number]: Drivers} = {
   0: {abbreviation: 'SAI', firstName: 'Carlos', lastName: 'Sainz'},

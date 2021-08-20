@@ -1,7 +1,7 @@
 import {F1Parser} from '../F1Parser';
 import {PacketHeaderParser} from './PacketHeaderParser';
 import {ParticipantDataParser} from './ParticipantDataParser';
-import {PacketParticipantsData} from './types';
+import {PacketParticipantsData} from '../../models/packets';
 
 export class PacketParticipantsDataParser extends F1Parser {
   data: PacketParticipantsData;

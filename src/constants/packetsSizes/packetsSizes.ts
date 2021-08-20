@@ -1,4 +1,4 @@
-import { PacketsSizes } from "@models/packetsSizes";
+import { PacketsSizes } from "../../models/constants"
 
 export const PACKETS_SIZES: {[index: string]: {[index: number]: PacketsSizes}} = {
   motion: {2021: 1464},

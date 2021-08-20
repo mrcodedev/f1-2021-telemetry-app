@@ -1,4 +1,4 @@
-import { EventCodes } from "@models/eventCodes"
+import { EventCodes } from "../../models/constants"
 
 export const EVENT_CODES: {[index: string]: EventCodes} = {
   SessionStarted: 'SSTA',

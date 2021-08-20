@@ -1,4 +1,4 @@
-import { Teams } from "../../models/teams"
+import { Teams } from "../../models/constants"
 
 const MERCEDES_COLOR = "#00D2BE"
 const FERRARI_COLOR = "#DC0000"

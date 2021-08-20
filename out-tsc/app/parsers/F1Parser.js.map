@@ -1,0 +1,1 @@
+{"version":3,"file":"F1Parser.js","sourceRoot":"","sources":["../../../src/parsers/F1Parser.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,eAAe,CAAC;AAGvC,MAAM,OAAO,QAAS,SAAQ,MAAM;IAMlC,UAAU,CAAC,MAAc;QACvB,OAAO,IAAI,CAAC,KAAK,CAAC,MAAM,CAAW,CAAC;IACtC,CAAC;CACF"}

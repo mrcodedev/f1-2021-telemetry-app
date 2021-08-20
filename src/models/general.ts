@@ -29,7 +29,7 @@ import {
   TyreStintHistoryData,
   TyreWear,
   WeatherForecastSample,
-} from '@models/packets';
+} from '../models/packets';
 
 export interface Options {
   port?: number;

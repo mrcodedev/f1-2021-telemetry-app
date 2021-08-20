@@ -1,4 +1,4 @@
-import { Tyres } from "@models/tyres";
+import { Tyres } from "../../models/constants"
 
 export const TYRES: {[index: number]: Tyres} = {
   0: {color: '#ffb3c3', name: 'Hyper Soft'},

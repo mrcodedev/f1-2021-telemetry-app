@@ -1,7 +1,7 @@
 import { F1Parser } from '../F1Parser'
 import { FinalClassificationDataParser } from './FinalClassificationDataParser'
 import { PacketHeaderParser } from './PacketHeaderParser'
-import { PacketFinalClassificationData } from '@models/packets'
+import { PacketFinalClassificationData } from '../../models/packets'
 
 export class PacketFinalClassificationDataParser extends F1Parser {
   data: PacketFinalClassificationData
