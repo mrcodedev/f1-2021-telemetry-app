@@ -1,16 +1,16 @@
 import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, PacketParticipantsData, CarSetupData, CarTelemetryData, CarStatusData, FinalClassificationData, LobbyInfoData, CarDamageData, PacketSessionHistoryData, ParticipantData } from '../models/packets'
-import { F1TelemetryClient, constants } from "../"
+import { F1TelemetryClient, constants } from ".."
 import { PACKETS } from '../constants'
 
 /**
- *  Object with status to show data if it is true
+ *  Object with status to show data
  */
 const activeTelemetry = {
-  motion: true,
+  motion: false,
   session: false,
   lapData: false,
   event: false,
-  participants: false,
+  participants: true,
   carSetups: false,
   carTelemetry: false,
   carStatus: false,
@@ -33,7 +33,7 @@ const activeTelemetry = {
  *  @param {string} address - Optional, address connection.
  */
 const optionsConnection = {
-  port: 20777, address: "0.0.0.0", skipParsing: true
+  port: 20777, address: "0.0.0.0"
 }
 
 const client = new F1TelemetryClient(optionsConnection)
@@ -41,7 +41,7 @@ const client = new F1TelemetryClient(optionsConnection)
 // 0: Motion
 if (activeTelemetry.motion) {
   client.on(PACKETS.motion, (motion: PacketMotionData) => {
-    console.log(motion)
+    // console.log(motion)
   })
 }
 
@@ -156,6 +156,15 @@ if (activeTelemetry.sessionHistory) {
   })
 }
 
-// to start listening:
+// 🏎 Start to listening packets of F1 2021 :D
 client.start()
 
+// 🏁 Close de server, not listen data :(
+const errorList = ["error", "exit", "SIGINT", "SIGUSR1", "SIGUSR2", "uncaughtException", "SIGTERM"]
+
+errorList.forEach(eventType => {
+  process.on(eventType, (data) => {
+    console.log("💣 [Closed]: ", data)
+    client.close()
+  })
+})

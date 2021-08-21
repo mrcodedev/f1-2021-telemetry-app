@@ -167,7 +167,7 @@ class F1TelemetryClient extends EventEmitter {
    *
    * @param {Buffer} message
    */
-  handleMessage(message: Buffer) {
+  private handleMessage(message: Buffer) {
     if (this.forwardAddresses) {
       // bridge message
       this.bridgeMessage(message);
@@ -182,7 +182,7 @@ class F1TelemetryClient extends EventEmitter {
       return;
     }
 
-    // emit parsed message
+    // Set name event, and data of event
     this.emit(parsedMessage.packetID, parsedMessage.packetData.data);
   }
 
@@ -190,7 +190,7 @@ class F1TelemetryClient extends EventEmitter {
    *
    * @param {Buffer} message
    */
-  bridgeMessage(message: Buffer) {
+  private bridgeMessage(message: Buffer) {
     if (!this.socket) {
       throw new Error('Socket is not initialized');
     }
@@ -211,7 +211,7 @@ class F1TelemetryClient extends EventEmitter {
   /**
    * Method to start listening for packets
    */
-  start() {
+  public start() {
     if (!this.socket) {
       return;
     }
@@ -244,7 +244,7 @@ class F1TelemetryClient extends EventEmitter {
   /**
    * Method to close the client
    */
-  stop() {
+  public close() {
     if (!this.socket) {
       return;
     }
