@@ -6,18 +6,18 @@ import { PACKETS } from '../constants'
  *  Object with status to show data
  */
 const activeTelemetry = {
-  motion: false,
-  session: false,
-  lapData: false,
-  event: false,
+  motion: true,
+  session: true,
+  lapData: true,
+  event: true,
   participants: true,
-  carSetups: false,
-  carTelemetry: false,
-  carStatus: false,
-  finalClassification: false,
-  lobbyInfo: false,
-  carDamage: false,
-  sessionHistory: false,
+  carSetups: true,
+  carTelemetry: true,
+  carStatus: true,
+  finalClassification: true,
+  lobbyInfo: true,
+  carDamage: true,
+  sessionHistory: true,
 }
 
 /**
