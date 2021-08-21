@@ -202,7 +202,3 @@ const getTimeNow = () => {
   const now = new Date(time)
   return now.toUTCString()
 }
-
-const startServer = () => {
-
-}
