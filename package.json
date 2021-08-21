@@ -1,6 +1,6 @@
 {
   "name": "f1-2021-telemetry-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "F1 2021 to show data of telemetry and show info in a Stencil app. This repo is forked of 'f1-2021-udp'",
   "main": "index.js",
   "repository": {
