@@ -223,7 +223,7 @@ class F1TelemetryClient extends EventEmitter {
 
       const address = this.socket.address() as AddressInfo;
       console.log(
-        `UDP Client listening on ${address.address}:${address.port} 🏎`
+        `✅ UDP Client listening on ${address.address}:${address.port} 🏎`
       );
 
       this.socket.on("listening", (listen: any) => console.log(listen))

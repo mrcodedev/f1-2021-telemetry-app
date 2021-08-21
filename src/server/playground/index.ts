@@ -1,23 +1,27 @@
+
+import WebSocket = require("ws")
 import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, PacketParticipantsData, CarSetupData, CarTelemetryData, CarStatusData, FinalClassificationData, LobbyInfoData, CarDamageData, PacketSessionHistoryData, ParticipantData } from '../models/packets'
 import { F1TelemetryClient, constants } from ".."
 import { PACKETS } from '../constants'
+import * as config from '../config/config.env.json'
+
 
 /**
  *  Object with status to show data
  */
 const activeTelemetry = {
-  motion: true,
-  session: true,
-  lapData: true,
+  motion: false,
+  session: false,
+  lapData: false,
   event: true,
-  participants: true,
-  carSetups: true,
-  carTelemetry: true,
-  carStatus: true,
-  finalClassification: true,
-  lobbyInfo: true,
-  carDamage: true,
-  sessionHistory: true,
+  participants: false,
+  carSetups: false,
+  carTelemetry: false,
+  carStatus: false,
+  finalClassification: false,
+  lobbyInfo: false,
+  carDamage: false,
+  sessionHistory: false,
 }
 
 /**
@@ -32,11 +36,27 @@ const activeTelemetry = {
  *  @param {boolean} address - Optional, IP Address
  *  @param {string} address - Optional, address connection.
  */
-const optionsConnection = {
-  port: 20777, address: "0.0.0.0"
-}
 
-const client = new F1TelemetryClient(optionsConnection)
+console.info("################################################")
+console.info("#  🚀 F1 2021 Telemetry - MrCodeDev v1.0.1 🚀  #")
+console.info("################################################")
+console.info("🚨 Dont close this window or the server not rules 🚨")
+console.info("👉 Creating connection to WebSocket Server...")
+const socket = new WebSocket(`ws://${config.connectWS.address}:${config.connectWS.port}`)
+console.info("👉 Creating connection to UDP F1 2021 Telemetry Client...")
+const client = new F1TelemetryClient({port: config.connectF1.port, address: config.connectF1.address, bigintEnabled: false})
+console.log("----------------------------------------------")
+
+socket.on("open", () => {
+  console.log(`✅ WebSocket Server Started on ${config.connectWS.address}:${config.connectWS.port} 💻`)
+  socket.send(
+    JSON.stringify({
+      type: "connect",
+      time: getTimeNow(),
+      connection: true
+    })
+  )
+})
 
 // 0: Motion
 if (activeTelemetry.motion) {
@@ -62,7 +82,8 @@ if (activeTelemetry.lapData) {
 // 3: Event
 if (activeTelemetry.event) {
   client.on(PACKETS.event, (event: PacketEventData) => {
-    console.log(event)
+    socket.send(JSON.stringify(event));
+
   })
 }
 // 4: Participants
@@ -102,8 +123,7 @@ if (activeTelemetry.participants) {
         }),
     }
 
-    console.log(participantPlayerResult)
-    return participantPlayerResult
+    socket.send(JSON.stringify(participantPlayerResult))
   })
 }
 
@@ -164,7 +184,25 @@ const errorList = ["error", "exit", "SIGINT", "SIGUSR1", "SIGUSR2", "uncaughtExc
 
 errorList.forEach(eventType => {
   process.on(eventType, (data) => {
-    console.log("💣 [Closed]: ", data)
+    if(data === "SIGUSR2") {
+      socket.close(1012, "Restarting Websocket Server")
+      client.close()
+      console.log("🔥 [Restarting]: Client UDP and Server WebSockets 🔥")
+      console.log("------------------")
+      return
+    }
+    socket.close(1000, "[Closed] WebSocket Server")
     client.close()
+    console.log("💣 [Closed] UDP Client and WebSocket Server: ", data)
   })
 })
+
+const getTimeNow = () => {
+  const time = Date.now()
+  const now = new Date(time)
+  return now.toUTCString()
+}
+
+const startServer = () => {
+
+}
