@@ -4,8 +4,6 @@ import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, Pa
 import { F1TelemetryClient, constants } from ".."
 import { PACKETS } from '../constants'
 import * as config from '../config/config.env.json'
-
-
 /**
  *  Object with status to show data
  */
@@ -14,7 +12,7 @@ const activeTelemetry = {
   session: false,
   lapData: false,
   event: true,
-  participants: false,
+  participants: true,
   carSetups: false,
   carTelemetry: false,
   carStatus: false,
@@ -56,6 +54,12 @@ socket.on("open", () => {
       connection: true
     })
   )
+})
+
+socket.on("close", () => {
+  console.log("[Closed] WebSockets Server closed 🙀")
+  socket.close()
+  client.close()
 })
 
 // 0: Motion
@@ -180,7 +184,7 @@ if (activeTelemetry.sessionHistory) {
 client.start()
 
 // 🏁 Close de server, not listen data :(
-const errorList = ["error", "exit", "SIGINT", "SIGUSR1", "SIGUSR2", "uncaughtException", "SIGTERM"]
+const errorList = ["error", "exit", "SIGINT", "SIGUSR1", "SIGUSR2", "uncaughtException", "SIGTERM", "ECONNREFUSED"]
 
 errorList.forEach(eventType => {
   process.on(eventType, (data) => {
@@ -191,9 +195,16 @@ errorList.forEach(eventType => {
       console.log("------------------")
       return
     }
-    socket.close(1000, "[Closed] WebSocket Server")
+
+    if(eventType === "uncaughtException") {
+      console.log("🔥🧨🔥 🙀 WebSocket server is not running!!! please do it now!!! 🙀")
+      client.close()
+      return
+    }
+
+    socket.close(1000, "💣 [Closed] WebSocket Server")
     client.close()
-    console.log("💣 [Closed] UDP Client and WebSocket Server: ", data)
+    console.log("🏁 [Finished] UDP Client and WebSocket Server are closed!!!")
   })
 })
 

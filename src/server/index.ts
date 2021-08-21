@@ -250,7 +250,7 @@ class F1TelemetryClient extends EventEmitter {
     }
 
     return this.socket.close(() => {
-      console.log('UDP Client closed 🏁');
+      console.log('💣 [Closed] UDP Client closed');
       this.socket = undefined;
     });
   }
