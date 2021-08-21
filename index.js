@@ -17,7 +17,6 @@ const { PACKETS } = constants
 */
 
 const activeTelemetry = {
-  // FALTA POR HACER
   motion: true,
   session: false,
   lapData: false,
