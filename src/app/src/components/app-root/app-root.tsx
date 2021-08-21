@@ -1,8 +1,9 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from "@stencil/core"
+import { match, Route, Router } from "@services/routes"
 
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.pcss',
+  tag: "app-root",
+  styleUrl: "app-root.pcss",
   shadow: true,
 })
 export class AppRoot {
@@ -14,14 +15,14 @@ export class AppRoot {
         </header>
 
         <main>
-          <stencil-router>
-            <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url="/" component="app-home" exact={true} />
-              <stencil-route url="/profile/:name" component="app-profile" />
-            </stencil-route-switch>
-          </stencil-router>
+          <Router.Switch>
+            <Route path="/" render={() => <app-home />}></Route>
+            <Route
+              path={match("/profile/:match")}
+              render={({ match }) => <app-profile match={match} />}></Route>
+          </Router.Switch>
         </main>
       </div>
-    );
+    )
   }
 }

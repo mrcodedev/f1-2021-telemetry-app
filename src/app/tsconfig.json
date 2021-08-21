@@ -4,22 +4,31 @@
     "allowUnreachableCode": false,
     "declaration": false,
     "experimentalDecorators": true,
-    "lib": [
-      "dom",
-      "es2015"
-    ],
+    "importHelpers": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
     "moduleResolution": "node",
     "module": "esnext",
     "target": "es2017",
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "resolveJsonModule": true,
+    "outDir": "./out-tsc/app",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@services/*": ["services/*"],
+      "@models/*": ["models/*"],
+      "@state/*": ["state/*"],
+      "@components/*": ["components/*"]
+    },
+    "baseUrl": "./src"
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src", "stencil.config.ts"]
 }

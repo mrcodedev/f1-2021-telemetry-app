@@ -11,6 +11,8 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
+    "@altafonte/eslint-config": "^1.1.1",
+    "@altafonte/router": "^0.8.1",
     "@stencil/core": "^2.7.0",
     "@stencil/postcss": "^2.0.0",
     "@stencil/router": "^1.0.1",
@@ -22,5 +24,8 @@
     "puppeteer": "^10.0.0",
     "workbox-build": "^4.3.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "@altafonte/eslint-config"
+  }
 }

@@ -1,0 +1,4 @@
+components.d.ts
+src/**/worldGeoJson.ts
+www
+dist
