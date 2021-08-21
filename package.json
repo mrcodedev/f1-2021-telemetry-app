@@ -28,10 +28,10 @@
   },
   "dependencies": {
     "binary-parser": "1.9.2",
+    "dgram": "^1.0.1",
     "struct": "^0.0.12"
   },
   "devDependencies": {
-    "@altafonte/eslint-config": "^1.1.1",
     "@types/binary-parser": "1.5.1",
     "@types/node": "^14.17.5",
     "eslint": "7.31.0",
@@ -68,5 +68,8 @@
   "homepage": "https://github.com/mrcodedev/f1-2021-telemetry-js#readme",
   "eslintConfig": {
     "extends": "@altafonte/eslint-config"
+  },
+  "engines": {
+    "node": ">=10"
   }
 }

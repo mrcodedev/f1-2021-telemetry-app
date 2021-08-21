@@ -25,7 +25,7 @@ import {Address, Options, Parsed, ParsedMessage} from "./models/general";
 const DEFAULT_PORT = 20777;
 const FORWARD_ADDRESSES = undefined;
 const BIGINT_ENABLED = true;
-const ADDRESS = 'localhost';
+const ADDRESS = '0.0.0.0';
 
 /**
  *
@@ -65,9 +65,13 @@ class F1TelemetryClient extends EventEmitter {
     const {m_packetId} = F1TelemetryClient.parsePacketHeader(
       message,
       bigintEnabled
-    );
+      );
+      
+      const parser = F1TelemetryClient.getParserByPacketId(m_packetId);
 
-    const parser = F1TelemetryClient.getParserByPacketId(m_packetId);
+      if(!parser) {
+        return
+      }
 
     const packetData = new parser(message, bigintEnabled);
     const packetID = Object.keys(constants.PACKETS)[m_packetId];
@@ -221,10 +225,15 @@ class F1TelemetryClient extends EventEmitter {
       console.log(
         `UDP Client listening on ${address.address}:${address.port} 🏎`
       );
+
+      this.socket.on("listening", (listen: any) => console.log(listen))
+    
       this.socket.setBroadcast(true);
     });
 
-    this.socket.on('message', m => this.handleMessage(m));
+    this.socket.on('message', message => {
+      this.handleMessage(message)
+    });
     this.socket.bind({
       port: this.port,
       address: this.address,
