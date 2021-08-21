@@ -22,10 +22,16 @@ In the game, you must activate the options market in red ad is
 
 ![F1 2021 UDP Options](img/udp-options.jpeg)
 
-When you have UDP telemetry activated in the F1 2021 game, we can start the server.
+When you have UDP telemetry activated in the F1 2021 game, we can start the WebSocket Server.
 
 ```bash
-npm run start
+npm run ws-server:start
+```
+
+After this we must start the F1 UDP clients, and WebSocket
+
+```bash
+npm run start:server
 ```
 
 You can now see the information that the game gives you.
