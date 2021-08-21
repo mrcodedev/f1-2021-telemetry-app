@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrcodedev/f1-2021-telemetry-js.git"
+    "url": "git+https://github.com/mrcodedev/f1-2021-telemetry-app.git"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -67,9 +67,9 @@
   "author": "MrCodeDev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrcodedev/f1-2021-telemetry-js/issues"
+    "url": "https://github.com/mrcodedev/f1-2021-telemetry-app/issues"
   },
-  "homepage": "https://github.com/mrcodedev/f1-2021-telemetry-js#readme",
+  "homepage": "https://github.com/mrcodedev/f1-2021-telemetry-app#readme",
   "engines": {
     "node": ">=10"
   }
