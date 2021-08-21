@@ -10,8 +10,18 @@ In this repo, can show the data in app do it with powerful StencilJS. Can show t
 
 ## Installing
 
-```
-$ npm i
+```bash
+npm i
 ```
 
 ## Usage
+
+In the game, you must activate the options market in red ad is
+
+![F1 logo game 2021 Codemasters](udp-options.jpeg)
+
+When you have UDP telemetry activated in the F1 2021 game, we can start the server.
+
+```bash
+npm run start
+```
