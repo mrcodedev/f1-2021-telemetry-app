@@ -7,7 +7,7 @@ import { FORMULAS } from './formulas/formulas'
 import { FUEL_MIX } from './fuelMix/fuelMix'
 import { INFRINGEMENTS } from './infringements/infringements'
 import { NATIONALITIES } from './nationalities/nationalities'
-import { PACKETS } from './packets/packets'
+import { PACKETS, PACKETS_NUMBERS } from './packets/packets'
 import { PACKETS_SIZES } from './packetsSizes/packetsSizes'
 import { PENALTIES } from './penalties/penalties'
 import { SAFETY_CAR_STATUSES } from './safetyCarStatuses/safetyCarStatuses'
@@ -30,6 +30,7 @@ export {
   NATIONALITIES,
   PACKETS_SIZES,
   PACKETS,
+  PACKETS_NUMBERS,
   PENALTIES,
   SAFETY_CAR_STATUSES,
   SESSION_TYPES,
