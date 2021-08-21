@@ -1,7 +1,7 @@
 {
   "name": "f1-2021-telemetry",
   "version": "1.0.0",
-  "description": "F1 2021 telemetry with TS",
+  "description": "F1 2021 to show data of telemetry and show info in a Stencil app. This repo is forked of 'f1-2021-udp'",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,17 +14,7 @@
     "build:link": "npm run build && npm link",
     "type-check:watch": "npm run type-check -- --watch",
     "type-check": "tsc --noEmit",
-    "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run lint",
-    "lint": "gts lint",
-    "prettier": "npm run prettier:base -- --write",
-    "prettier:check": "npm run prettier:base -- -c",
-    "prettier:base": "prettier '**/*{.ts,.tsx,.css,.pcss,.html}'"
+    "compile": "tsc"
   },
   "dependencies": {
     "binary-parser": "1.9.2",
@@ -36,8 +26,6 @@
     "@types/node": "^14.17.5",
     "eslint": "7.31.0",
     "eslint-plugin-node": "^11.1.0",
-    "gts": "^3.1.0",
-    "husky": "7.0.1",
     "lint-staged": "11.0.1",
     "prettier": "^2.3.2",
     "typescript": "^4.0.3"
@@ -55,10 +43,26 @@
   },
   "keywords": [
     "F1",
-    "F1",
-    "2021",
+    "Formula 1",
+    "F1 2021",
+    "Codemasters",
+    "udp telemetry",
     "telemetry",
-    "simracing"
+    "simracing",
+    "codemasters",
+    "gaming",
+    "esports",
+    "e-sports",
+    "e sports",
+    "wheels",
+    "videogame",
+    "ps4",
+    "playstation 4",
+    "ps5",
+    "playstation 5",
+    "xbox",
+    "fanatec",
+    "logitech"
   ],
   "author": "MrCodeDev",
   "license": "MIT",
@@ -66,9 +70,6 @@
     "url": "https://github.com/mrcodedev/f1-2021-telemetry-js/issues"
   },
   "homepage": "https://github.com/mrcodedev/f1-2021-telemetry-js#readme",
-  "eslintConfig": {
-    "extends": "@altafonte/eslint-config"
-  },
   "engines": {
     "node": ">=10"
   }
