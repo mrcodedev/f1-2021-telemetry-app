@@ -31,8 +31,7 @@ client.on(PACKETS.participants, participant => {
       })
       .map((driver, index) => {
         return {
-          player:
-            index === participant.m_header.m_playerCarIndex ? true : false,
+          player: index === playerIndex ? true : false,
           name: driver.m_name,
           typeAI: driver.m_aiControlled === 0 ? "Human" : "IA",
           driverId:
@@ -57,7 +56,7 @@ client.on(PACKETS.participants, participant => {
         }
       }),
   }
-  console.log(participantPlayerResult)
+  //   console.log(participantPlayerResult)
 })
 // client.on(PACKETS.carTelemetry, pruebas => consol.e.log(pruebas))
 // client.on(PACKETS.carStatus, pruebas => console.log(pruebas))
