@@ -9,12 +9,14 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "start": "npm run build && nodemon --config nodemon.json ./build/src/server/playground/index.js",
-    "build": "tsc --watch",
+    "start:server": "npm run build:server && nodemon --config nodemon.json ./build/src/server/playground/index.js",
+    "build:server": "tsc --watch",
     "build:link": "npm run build && npm link",
     "type-check:watch": "npm run type-check -- --watch",
     "type-check": "tsc --noEmit",
-    "ws-server:start": "nodemon --config nodemon.json ./build/src/server/websocket/index.js"
+    "ws-server:start": "nodemon --config nodemon.json ./build/src/server/websocket/index.js",
+    "start:app": "cd src/app/ && stencil build --dev --watch --serve",
+    "build:app": "cd src/app/ && stencil build"
   },
   "dependencies": {
     "binary-parser": "1.9.2",
