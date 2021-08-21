@@ -1,21 +1,10 @@
-const { F1TelemetryClient, constants } = require("./build/src/index.js")
-const { PACKETS } = constants
+import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, PacketParticipantsData, CarSetupData, CarTelemetryData, CarStatusData, FinalClassificationData, LobbyInfoData, CarDamageData, PacketSessionHistoryData, ParticipantData } from '../models/packets'
+import { F1TelemetryClient, constants } from "../"
+import { PACKETS } from '../constants'
 
-/*
-*   'port' is optional, defaults to 20777
-
-*   'bigintEnabled' is optional, defaults to true
-     setting it to false makes the parser skip bigint values
-
-*   'forwardAddresses' is optional, defaults to undefined
-    it's an array of Address objects to forward unparsed telemetry to.
-    each address object is comprised of a port and an optional ip address
-
-*   'skipParsing' is optional, defaults to false
-    setting it to true will make the client not parse and emit content.
-    You can consume telemetry data using forwardAddresses instead.              
-*/
-
+/**
+ *  Object with status to show data if it is true
+ */
 const activeTelemetry = {
   motion: true,
   session: false,
@@ -31,45 +20,61 @@ const activeTelemetry = {
   sessionHistory: false,
 }
 
-const client = new F1TelemetryClient()
+/**
+ *  Accepted parametrs to do a connection
+ * 
+ *  @param {number} port - Optional, defaults to 20777
+ *  @param {Address[]} forwardAddresses - defaults to undefined
+ *  @param {boolean} bigIntEnabled - Optional, defaults to true
+    setting it to false makes the parser skip bigint values
+    it's an array of Address objects to forward unparsed telemetry to.
+    each address object is comprised of a port and an optional ip address
+ *  @param {boolean} address - Optional, IP Address
+ *  @param {string} address - Optional, address connection.
+ */
+const optionsConnection = {
+  port: 20777, address: "0.0.0.0", skipParsing: true
+}
+
+const client = new F1TelemetryClient(optionsConnection)
 
 // 0: Motion
 if (activeTelemetry.motion) {
-  client.on(PACKETS.motion, motion => {
+  client.on(PACKETS.motion, (motion: PacketMotionData) => {
     console.log(motion)
   })
 }
 
 // 1: Session
 if (activeTelemetry.session) {
-  client.on(PACKETS.session, session => {
+  client.on(PACKETS.session, (session: PacketSessionData) => {
     console.log(session)
   })
 }
 
 // 2: Lap Data
 if (activeTelemetry.lapData) {
-  client.on(PACKETS.lapData, lapData => {
+  client.on(PACKETS.lapData, (lapData: PacketLapData) => {
     console.log(lapData)
   })
 }
 
 // 3: Event
 if (activeTelemetry.event) {
-  client.on(PACKETS.event, event => {
+  client.on(PACKETS.event, (event: PacketEventData) => {
     console.log(event)
   })
 }
 // 4: Participants
 if (activeTelemetry.participants) {
-  client.on(PACKETS.participants, participants => {
+  client.on(PACKETS.participants, (participants: PacketParticipantsData) => {
     const playerIndex = participants.m_header.m_playerCarIndex
     const participantPlayerResult = {
       packet: constants.PACKETS_NUMBERS[participants.m_header.m_packetId],
       timeStamp: participants.m_header.m_sessionTime,
       drivers: participants.m_participants
-        .filter(driver => driver.m_name !== "")
-        .map((driver, index) => {
+        .filter((driver: ParticipantData) => driver.m_name !== "")
+        .map((driver: ParticipantData, index: number) => {
           return {
             player: index === playerIndex ? true : false,
             name: driver.m_name,
@@ -104,52 +109,53 @@ if (activeTelemetry.participants) {
 
 // 5: Car Setups
 if (activeTelemetry.carSetups) {
-  client.on(PACKETS.carSetups, carSetups => {
+  client.on(PACKETS.carSetups, (carSetups: CarSetupData) => {
     console.log(carSetups)
   })
 }
 
 // 6: Car Telemetry
 if (activeTelemetry.carTelemetry) {
-  client.on(PACKETS.carTelemetry, carTelemetry => {
+  client.on(PACKETS.carTelemetry, (carTelemetry: CarTelemetryData) => {
     console.log(carTelemetry)
   })
 }
 
 // 7: Car Status
 if (activeTelemetry.carStatus) {
-  client.on(PACKETS.carStatus, carStatus => {
+  client.on(PACKETS.carStatus, (carStatus: CarStatusData) => {
     console.log(carStatus)
   })
 }
 
 // 8: Final Classification
 if (activeTelemetry.finalClassification) {
-  client.on(PACKETS.finalClassification, finalClassification => {
+  client.on(PACKETS.finalClassification, (finalClassification: FinalClassificationData) => {
     console.log(finalClassification)
   })
 }
 
 // 9: Lobby Info
 if (activeTelemetry.lobbyInfo) {
-  client.on(PACKETS.lobbyInfo, lobbyInfo => {
+  client.on(PACKETS.lobbyInfo, (lobbyInfo: LobbyInfoData) => {
     console.log(lobbyInfo)
   })
 }
 
 // 10: Car Damage
 if (activeTelemetry.carDamage) {
-  client.on(PACKETS.carDamage, carDamage => {
+  client.on(PACKETS.carDamage, (carDamage: CarDamageData) => {
     console.log(carDamage)
   })
 }
 
 // 11: Session History
 if (activeTelemetry.sessionHistory) {
-  client.on(PACKETS.sessionHistory, sessionHistory => {
+  client.on(PACKETS.sessionHistory, (sessionHistory: PacketSessionHistoryData) => {
     console.log(sessionHistory)
   })
 }
 
 // to start listening:
 client.start()
+

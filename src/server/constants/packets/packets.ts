@@ -13,7 +13,7 @@ export const PACKETS = {
   sessionHistory: 'sessionHistory',
 }
 
-export const PACKETS_NUMBERS = {
+export const PACKETS_NUMBERS: {[index: number]: string} = {
   0: 'Motion',
   1: 'Session',
   2: 'Lap Data',

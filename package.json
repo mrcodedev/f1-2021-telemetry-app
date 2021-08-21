@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "start": "npm run build && node build/src/playground/index.js",
+    "start": "npm run build && node build/src/server/playground/index.js",
     "build": "tsc",
     "build:link": "npm run build && npm link",
     "type-check:watch": "npm run type-check -- --watch",
