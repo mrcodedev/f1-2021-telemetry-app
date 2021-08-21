@@ -1,5 +1,7 @@
 # F1 2021 UDP Telemetry Client and App
 
+![F1 logo game 2021 Codemasters](logo.jpeg)
+
 This is a TypeScript UDP client, telemetry parser, and app for Codemaster F1 2021 videogame.
 
 The F1 series of games support the outputting of key game data via a UDP data stream. This data can be interpreted by external apps or connected peripherals for a range of different uses, including providing additional telemetry information, customised HUD displays, motion platform hardware support or providing force feedback data for custom steering wheels.
