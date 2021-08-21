@@ -1,8 +1,8 @@
 {
-  "name": "f1-2021-telemetry-app",
+  "name": "f1-2021-app-telemetry",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "App of telemetry of game F1 2021 of Codemasters. The app listen the WebSocket server, and shows info in real time",
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
