@@ -69,9 +69,7 @@ if (activeTelemetry.participants) {
       packet: constants.PACKETS_NUMBERS[participants.m_header.m_packetId],
       timeStamp: participants.m_header.m_sessionTime,
       drivers: participants.m_participants
-        .filter(driver => {
-          return driver.m_name !== ""
-        })
+        .filter(driver => driver.m_name !== "")
         .map((driver, index) => {
           return {
             player: index === playerIndex ? true : false,
