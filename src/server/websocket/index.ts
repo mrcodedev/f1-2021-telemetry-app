@@ -1,38 +1,29 @@
 import express = require("express")
 import http = require("http")
-import WebSocket = require("ws")
+import * as socketio from "socket.io";
 import { connectWS } from "../config/config.env.json";
 
-const SERVER = http.createServer(express);
-const wss = new WebSocket.Server({ server: SERVER })
+const server = http.createServer(express);
+const io = new socketio.Server(server, { transports : ['websocket'] })
 
-wss.on("connection", (ws) => {
-  ws.on("open", (open: WebSocket) => {
-    console.log("Server is OPEN")
-    console.log(open)
+io.on("connection", (socket) => {
+  console.log("Client is connected")
+
+  socket.on("message", (message) => {
+    socket.broadcast.emit("message", message)
   })
 
-  ws.on("message", (message: WebSocket) => {
-    console.log(`Message Client: ${message}`)
-    wss.clients.forEach((client: WebSocket) => {
-      if(client.readyState === WebSocket.OPEN && client !== ws) {
-        client.send(message)
-      }
-    })
-  })
-
-  ws.on("error", (error: WebSocket) => {
+  socket.on("error", (error) => {
     console.log("[ERROR]: :(")
     console.log(error)
   })
 
-  ws.on("close", (close) => {
+  socket.on("disconnect", () => {
     console.log("Client has disconnected!")
-    console.log(close)
   })
 })
 
-SERVER.listen(connectWS.port, () =>  {
-  console.log(`Server is listening on PORT: ${connectWS.port}`)
+server.listen({port: connectWS.port, server: connectWS.address}, () =>  {
+  console.log(`Server is listening on PORT: ${connectWS.address}:${connectWS.port}`);
 })
 
