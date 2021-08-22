@@ -18,9 +18,11 @@ npm i
 
 ## Usage
 
-In the game, you must activate the options market in red ad is
+In the game, you must activate UDP Telemetry, with your IP:
 
 ![F1 2021 UDP Options](img/udp-options.jpeg)
+
+Use local direction IP, not activate retransmition UDP mode, consumes a lot of resources.
 
 When you have UDP telemetry activated in the F1 2021 game, we can start the WebSocket Server.
 
