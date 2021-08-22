@@ -15,7 +15,7 @@ wss.on("connection", (ws) => {
   ws.on("message", (message: WebSocket) => {
     console.log(`Message Client: ${message}`)
     wss.clients.forEach((client: WebSocket) => {
-      if(client.readyState === WebSocket.OPEN) {
+      if(client.readyState === WebSocket.OPEN && client !== ws) {
         client.send(message)
       }
     })

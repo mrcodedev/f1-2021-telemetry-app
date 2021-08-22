@@ -12,7 +12,7 @@ const activeTelemetry = {
   session: false,
   lapData: false,
   event: true,
-  participants: true,
+  participants: false,
   carSetups: false,
   carTelemetry: false,
   carStatus: false,
@@ -79,7 +79,7 @@ if (activeTelemetry.session) {
 // 2: Lap Data
 if (activeTelemetry.lapData) {
   client.on(PACKETS.lapData, (lapData: PacketLapData) => {
-    console.log(lapData)
+    console.log(JSON.stringify(lapData))
   })
 }
 
