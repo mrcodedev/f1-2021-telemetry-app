@@ -1,5 +1,6 @@
 
-import WebSocket = require("ws")
+import io from "socket.io-client";
+
 import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, PacketParticipantsData, CarSetupData, CarTelemetryData, CarStatusData, FinalClassificationData, LobbyInfoData, CarDamageData, PacketSessionHistoryData, ParticipantData } from '../models/packets'
 import { F1TelemetryClient, constants } from ".."
 import { PACKETS } from '../constants'
@@ -40,12 +41,12 @@ console.info("#  🚀 F1 2021 Telemetry - MrCodeDev v1.0.1 🚀  #")
 console.info("################################################")
 console.info("🚨 Dont close this window or the server not rules 🚨")
 console.info("👉 Creating connection to WebSocket Server...")
-const socket = new WebSocket(`ws://${config.connectWS.address}:${config.connectWS.port}`)
+const socket = io(`ws://${config.connectWS.address}:${config.connectWS.port}`, { transports : ['websocket'] })
 console.info("👉 Creating connection to UDP F1 2021 Telemetry Client...")
 const client = new F1TelemetryClient({port: config.connectF1.port, address: config.connectF1.address, bigintEnabled: false})
 console.log("----------------------------------------------")
 
-socket.on("open", () => {
+socket.on("connect", () => {
   console.log(`✅ WebSocket Server Started on ${config.connectWS.address}:${config.connectWS.port} 💻`)
   socket.send(
     JSON.stringify({
@@ -189,7 +190,7 @@ const errorList = ["error", "exit", "SIGINT", "SIGUSR1", "SIGUSR2", "uncaughtExc
 errorList.forEach(eventType => {
   process.on(eventType, (data) => {
     if(data === "SIGUSR2") {
-      socket.close(1012, "Restarting Websocket Server")
+      socket.close()
       client.close()
       console.log("🔥 [Restarting]: Client UDP and Server WebSockets 🔥")
       console.log("------------------")
@@ -202,7 +203,7 @@ errorList.forEach(eventType => {
       return
     }
 
-    socket.close(1000, "💣 [Closed] WebSocket Server")
+    socket.close()
     client.close()
     console.log("🏁 [Finished] UDP Client and WebSocket Server are closed!!!")
   })
