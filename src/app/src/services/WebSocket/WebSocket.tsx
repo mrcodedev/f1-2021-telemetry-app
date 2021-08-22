@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, State } from "@stencil/core"
+import io from "socket.io-client"
 
 @Component({
   tag: "f1-websocket",
@@ -21,19 +22,21 @@ export class WebSocket implements ComponentInterface {
   }
 
   private startConnection() {
-    const ws = new window.WebSocket("ws://localhost:20778")
+    const socket = io("ws://localhost:20778", { transports: ["websocket"] })
 
-    ws.onopen = () => {
+    socket.on("connect", () => {
+      socket.emit("server", "Client connected to the Server!!!")
       this.connection = true
-    }
+    })
 
-    ws.onmessage = data => {
-      this.data = data.data
+    socket.on("message", data => {
+      this.data = data
       console.log(JSON.parse(this.data))
-    }
+    })
 
-    ws.onclose = () => {
-      console.log("CERRADO :(")
-    }
+    socket.on("disconnect", () => {
+      socket.emit("server", "Client disconnected to the Server!!!")
+      this.connection = false
+    })
   }
 }
