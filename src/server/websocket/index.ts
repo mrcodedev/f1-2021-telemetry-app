@@ -7,8 +7,6 @@ const server = http.createServer(express);
 const io = new socketio.Server(server, { transports : ['websocket'] })
 
 io.on("connection", (socket) => {
-  console.log("Client is connected")
-
   socket.on("message", (message) => {
     socket.broadcast.emit("message", message)
   })
