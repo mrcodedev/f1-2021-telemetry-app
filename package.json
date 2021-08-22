@@ -8,16 +8,16 @@
     "url": "git+https://github.com/mrcodedev/f1-2021-telemetry-app.git"
   },
   "scripts": {
-    "prepublishOnly": "npm run build",
-    "start:server": "npm run build:server && nodemon --config nodemon.json ./build/src/server/playground/index.js",
+    "start:ws": "npm run build:server && node ./build/src/server/websocket/index.js",
+    "start:client": "npm run build:server && nodemon --config nodemon.json ./build/src/server/playground/index.js",
+    "start:app": "cd src/app/ && stencil build --dev --watch --serve",
+    "start:all": "npm run start:ws & npm run start:client & npm run start:app",
     "build:server": "tsc",
     "build:server-watch": "tsc --watch",
+    "build:app": "cd src/app/ && stencil build",
     "build:link": "npm run build && npm link",
     "type-check:watch": "npm run type-check -- --watch",
-    "type-check": "tsc --noEmit",
-    "ws-server:start": "npm run build:server && node ./build/src/server/websocket/index.js",
-    "start:app": "cd src/app/ && stencil build --dev --watch --serve",
-    "build:app": "cd src/app/ && stencil build"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "binary-parser": "1.9.2",
