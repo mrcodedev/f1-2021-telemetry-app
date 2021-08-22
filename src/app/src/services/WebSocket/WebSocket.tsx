@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, State } from "@stencil/core"
+import { Component, ComponentInterface, State, h, Host } from "@stencil/core"
 import io from "socket.io-client"
 
 @Component({
@@ -6,8 +6,6 @@ import io from "socket.io-client"
 })
 export class WebSocket implements ComponentInterface {
   @State() connection: boolean = false
-  @State() triangulo: boolean = false
-  private data?: any
 
   componentWillLoad(): void {
     if (this.connection) {
@@ -18,7 +16,13 @@ export class WebSocket implements ComponentInterface {
   }
 
   render() {
-    return this.connection ? "CONECTADO" : "DESCONECTADO"
+    return (
+      <Host>
+        <div>
+          Server Status: {this.connection ? "Conectado" : "Desconectado"}
+        </div>
+      </Host>
+    )
   }
 
   private startConnection() {
@@ -30,8 +34,7 @@ export class WebSocket implements ComponentInterface {
     })
 
     socket.on("message", data => {
-      this.data = data
-      console.log(JSON.parse(this.data))
+      console.log(JSON.parse(data))
     })
 
     socket.on("disconnect", () => {

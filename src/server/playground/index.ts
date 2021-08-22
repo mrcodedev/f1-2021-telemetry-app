@@ -5,6 +5,8 @@ import { PacketMotionData, PacketSessionData, PacketLapData, PacketEventData, Pa
 import { F1TelemetryClient, constants } from ".."
 import { PACKETS } from '../constants'
 import * as config from '../config/config.env.json'
+import { PS_BTNS } from "../models/event-buttons";
+
 /**
  *  Object with status to show data
  */
@@ -87,8 +89,10 @@ if (activeTelemetry.lapData) {
 // 3: Event
 if (activeTelemetry.event) {
   client.on(PACKETS.event, (event: PacketEventData) => {
-    socket.send(JSON.stringify(event));
+    const buttonNumber = event.Buttons?.m_buttonStatus ?? 999999999
+    const buttonLetter = PS_BTNS[buttonNumber];
 
+    socket.send(JSON.stringify(!buttonLetter ? "Not mapped" : buttonLetter ));
   })
 }
 // 4: Participants

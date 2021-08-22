@@ -215,6 +215,7 @@ export interface CarSetupData {
 export interface PacketEventData {
   m_header: PacketHeader;
   m_eventStringCode: string;
+  Buttons?: { m_buttonStatus: number}
 }
 
 export interface PacketParticipantsData {
