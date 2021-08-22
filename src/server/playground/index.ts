@@ -89,10 +89,11 @@ if (activeTelemetry.lapData) {
 // 3: Event
 if (activeTelemetry.event) {
   client.on(PACKETS.event, (event: PacketEventData) => {
-    const buttonNumber = event.Buttons?.m_buttonStatus ?? 999999999
-    const buttonLetter = PS_BTNS[buttonNumber];
+    // const buttonNumber = event.Buttons?.m_buttonStatus ?? 999999999
+    // const buttonLetter = PS_BTNS[buttonNumber];
+    // const buttonPressed = JSON.stringify(!buttonLetter ? "Not mapped" : buttonLetter)
 
-    socket.send(JSON.stringify(!buttonLetter ? "Not mapped" : buttonLetter ));
+    socket.send(JSON.stringify(event));
   })
 }
 // 4: Participants
