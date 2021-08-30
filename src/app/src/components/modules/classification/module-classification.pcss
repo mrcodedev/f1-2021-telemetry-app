@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+
+  & thead {
+    background-color: #060606;
+    & th {
+      text-align: left;
+      padding: 27px 20px 20px 20px;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: white;
+      border-top: #cd2926 4px solid;
+    }
+  }
+  & tbody {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 16px;
+    & tr {
+      & .position {
+        width: 35px;
+      }
+      & td {
+        padding: 8px 0px;
+        width: auto;
+        &:nth-child(2) {
+          width: 20px;
+        }
+        &:nth-child(3) {
+          min-width: 240px;
+          max-width: 300px;
+        }
+        & .square {
+          margin: 2px 15px 2px 5px;
+          padding: 7px 10px;
+          background-color: white;
+          color: black;
+          border-bottom-right-radius: 5px;
+        }
+        & .color-team {
+          width: 10px;
+          padding: 4px 2.6px;
+          content: "";
+          background-color: red;
+          margin: 0px 15px 0px 0px;
+        }
+      }
+    }
+  }
+}

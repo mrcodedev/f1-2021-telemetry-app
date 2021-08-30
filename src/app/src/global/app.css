@@ -8,8 +8,33 @@
   Any global CSS variables should also be applied here.
 */
 
+@font-face {
+  font-family: f1-font;
+  src: url("/assets/fonts/Formula1-Regular.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: f1-font;
+  src: url("/assets/fonts/Formula1-Wide.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: f1-font;
+  src: url("/assets/fonts/Formula1-Bold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: f1-font;
+  src: url("/assets/fonts/Formula1-Black.ttf");
+  font-weight: 800;
+}
+
 body {
   margin: 0px;
   padding: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

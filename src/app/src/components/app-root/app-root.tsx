@@ -15,10 +15,14 @@ export class AppRoot {
         </header>
         <main>
           <Router.Switch>
-            <Route path="/" render={() => <app-home />}></Route>
+            <Route path="/" render={() => <app-home />} />
             {/* <Route
               path={match("/profile/:match")}
               render={({ match }) => <app-profile match={match} />}></Route> */}
+            <Route
+              path="/classification"
+              render={() => <f1-module-classification />}
+            />
           </Router.Switch>
         </main>
       </div>

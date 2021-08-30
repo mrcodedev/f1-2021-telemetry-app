@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface F1ModuleClassification {
+    }
     interface F1Websocket {
     }
 }
@@ -26,6 +28,12 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLF1ModuleClassificationElement extends Components.F1ModuleClassification, HTMLStencilElement {
+    }
+    var HTMLF1ModuleClassificationElement: {
+        prototype: HTMLF1ModuleClassificationElement;
+        new (): HTMLF1ModuleClassificationElement;
+    };
     interface HTMLF1WebsocketElement extends Components.F1Websocket, HTMLStencilElement {
     }
     var HTMLF1WebsocketElement: {
@@ -35,6 +43,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
+        "f1-module-classification": HTMLF1ModuleClassificationElement;
         "f1-websocket": HTMLF1WebsocketElement;
     }
 }
@@ -43,11 +52,14 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface F1ModuleClassification {
+    }
     interface F1Websocket {
     }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-root": AppRoot;
+        "f1-module-classification": F1ModuleClassification;
         "f1-websocket": F1Websocket;
     }
 }
@@ -57,6 +69,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "f1-module-classification": LocalJSX.F1ModuleClassification & JSXBase.HTMLAttributes<HTMLF1ModuleClassificationElement>;
             "f1-websocket": LocalJSX.F1Websocket & JSXBase.HTMLAttributes<HTMLF1WebsocketElement>;
         }
     }
