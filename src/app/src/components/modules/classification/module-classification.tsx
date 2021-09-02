@@ -30,7 +30,7 @@ export class F1ModuleClassification {
             <td>NET</td>
             <td>Red Bull Racing Honda</td>
             <td class="logo-team">
-              <img src="/assets/img/teams/final/redbull.jpg" />
+              <img src="/assets/img/teams/final/red-bull.jpg" />
             </td>
           </tr>
           <tr>
@@ -46,7 +46,7 @@ export class F1ModuleClassification {
             <td>NET</td>
             <td>Red Bull Racing Honda</td>
             <td class="logo-team">
-              <img src="/assets/img/teams/final/redbull.jpg" />
+              <img src="/assets/img/teams/final/red-bull.jpg" />
             </td>
           </tr>
           <tr>
