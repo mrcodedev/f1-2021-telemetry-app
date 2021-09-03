@@ -3,9 +3,7 @@
 }
 
 table {
-  width: 80%;
   border-collapse: collapse;
-
   & thead {
     background-color: #060606;
     & th {
@@ -19,42 +17,98 @@ table {
   }
   & tbody {
     color: white;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.9);
     font-size: 16px;
     & tr {
-      & .position {
-        width: 35px;
-      }
       & td {
-        padding: 8px 0px;
-        width: auto;
-        &:nth-child(2) {
-          width: 20px;
-        }
-        &:nth-child(3) {
-          min-width: 240px;
-          max-width: 300px;
-        }
-        &:nth-child(6) {
-          & img {
-            width: 28px;
-            height: 28px;
+        &.position {
+          width: 35px;
+          max-width: 35px;
+          min-width: 35px;
+          & .square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            color: black;
+            border-bottom-right-radius: 5px;
           }
         }
-        & .square {
-          margin: 2px 15px 2px 5px;
-          padding: 7px 10px;
-          background-color: white;
-          color: black;
-          border-bottom-right-radius: 5px;
+        &.team-color {
+          width: 0px;
+          max-width: 10px;
+          min-width: 10px;
+          & .color {
+            margin: 0px 10px 0px 0px;
+            width: 5px;
+            height: 20px;
+            content: "";
+          }
+          & .redbull {
+            background-color: #0600ef;
+          }
+          & .mercedes {
+            background-color: #00d2be;
+          }
+          & .ferrari {
+            background-color: #dc0000;
+          }
+          & .williams {
+            background-color: #005aff;
+          }
+          & .aston-martin {
+            background-color: #006f62;
+          }
+          & .alpine {
+            background-color: #0090ff;
+          }
+          & .alpha-tauri {
+            background-color: #2b4562;
+          }
+          & .haas {
+            background-color: #ffffff;
+          }
+          & .mclaren {
+            background-color: #ff8700;
+          }
+          & .alfa-romeo {
+            background-color: #900000;
+          }
         }
-        & .color-team {
-          width: 10px;
-          padding: 4px 2.6px;
-          content: "";
-          background-color: red;
-          margin: 0px 15px 0px 0px;
+        &.driver-name {
+          width: 350px;
+          min-width: 240px;
+          max-width: 350px;
         }
+        &.driver-country {
+          width: 40px;
+          max-width: 40px;
+          min-width: 40px;
+
+          & img {
+            height: 20px;
+          }
+        }
+        &.driver-team {
+          width: 230px;
+          max-width: 320px;
+          min-width: 230px;
+        }
+        &.logo-team {
+          width: 30px;
+          max-width: 30px;
+          min-height: 30px;
+          padding: 0px 10px 0px 0px;
+          & img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.1);
       }
     }
   }
