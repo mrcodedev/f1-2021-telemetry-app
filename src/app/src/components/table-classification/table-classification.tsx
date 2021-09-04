@@ -1,5 +1,5 @@
-import { DataClassification } from "@components/modules/classification/module-classification"
-import { Component, ComponentInterface, h, Prop } from "@stencil/core"
+import { TableColumns, TableData, TableProps } from "@models/table"
+import { Component, ComponentInterface, h, JSX, Prop } from "@stencil/core"
 
 @Component({
   tag: "f1-table-classification",
@@ -7,19 +7,118 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core"
   scoped: true,
 })
 export class F1TableClassification implements ComponentInterface {
-  @Prop() readonly tableTitle?: string = ""
-  @Prop() readonly data?: DataClassification[] = []
+  @Prop() readonly header?: string = ""
+  @Prop() readonly columns?: TableColumns[] = []
+  @Prop() readonly data?: TableData[] = []
 
-  render() {
+  render(): JSX.Element {
     return (
       <table>
+        {this.renderHeader()}
+        {this.renderBody()}
+      </table>
+    )
+  }
+
+  private renderHeader() {
+    console.log(this.tableSaved)
+    if (this.header) {
+      return (
         <thead>
           <tr class="tr-head">
-            <th colSpan={6} class="f1-text-normal">
-              {this.tableTitle}
+            <th colSpan={this.columns?.length ?? 0} class="f1-text-normal">
+              {this.header}
             </th>
           </tr>
         </thead>
+      )
+    }
+  }
+
+  private renderBody() {
+    return (
+      <tbody>
+        {this.data?.map(driver => {
+          return (
+            <tr>
+              {this.columns?.map(column => {
+                return (
+                  <td class={`${driver[column.prop]}`}>
+                    {this.tableTableData(column.prop, driver[column.prop])}
+                  </td>
+                )
+              })}
+            </tr>
+          )
+        })}
+        {/* <td class="driver_position">
+            <div class="square f1-text-bold">1</div>
+          </td>
+          <td class="driver_team_color">
+            <div class="color redbull" />
+          </td>
+          <td class="driver_name">
+            Max <span class="f1-text-bold">VERSTAPPEN</span>
+          </td>
+          <td class="driver_country">
+            <img src="/assets/img/flags/netherlands.jpg" />
+          </td>
+          <td class="driver_team">Red Bull Racing Honda</td>
+          <td class="driver_team_logo">
+            <img src="/assets/img/teams/red-bull.jpg" />
+          </td> */}
+      </tbody>
+    )
+  }
+
+  private tableTableData(prop: TableProps, data: any) {
+    const tableTypeData = {
+      driver_position: () => {
+        return (
+          <td class="driver_position">
+            <div class="f1-text-bold square">{data}</div>
+          </td>
+        )
+      },
+      driver_team_color: () => {
+        return (
+          <td class="driver_team_color">
+            <div class={`color ${data}`} />
+          </td>
+        )
+      },
+      driver_name: () => {
+        return <td class="driver_name">{data}</td>
+      },
+      driver_country: () => {
+        return (
+          <td class="driver_country">
+            <img src={`/assets/img/flags/${data}.jpg`} alt={data} />
+          </td>
+        )
+      },
+      driver_team: () => {
+        return <td class="driver_team">{data}</td>
+      },
+      driver_team_logo: () => {
+        return (
+          <td class="driver_team_logo">
+            <img src={`/assets/img/teams/${data}.jpg`} alt={data} />
+          </td>
+        )
+      },
+      driver_team_lap: () => {
+        return <td class="driver_time_lap">{data}</td>
+      },
+    }
+
+    return tableTypeData[prop]()
+  }
+
+  private tableSaved() {
+    return (
+      <table>
+        {this.renderHeader()}
         <tbody class="f1-text-normal">
           <tr>
             <td class="position">

@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { DataClassification } from "@components/modules/classification/module-classification";
+import { TableColumns, TableData } from "@models/table";
 export namespace Components {
     interface AppHome {
     }
@@ -14,8 +14,9 @@ export namespace Components {
     interface F1ModuleClassification {
     }
     interface F1TableClassification {
-        "data"?: DataClassification[];
-        "tableTitle"?: string;
+        "columns"?: TableColumns[];
+        "data"?: TableData[];
+        "header"?: string;
     }
     interface F1Websocket {
     }
@@ -67,8 +68,9 @@ declare namespace LocalJSX {
     interface F1ModuleClassification {
     }
     interface F1TableClassification {
-        "data"?: DataClassification[];
-        "tableTitle"?: string;
+        "columns"?: TableColumns[];
+        "data"?: TableData[];
+        "header"?: string;
     }
     interface F1Websocket {
     }

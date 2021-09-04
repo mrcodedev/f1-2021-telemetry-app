@@ -1,0 +1,11 @@
+export type TeamName =
+| "redbull"
+| "alpine"
+| "ferrari"
+| "mclaren"
+| "mercedes"
+| "alfa-romeo"
+| "haas"
+| "alpha-tauri"
+| "williams"
+| "aston-martin"
