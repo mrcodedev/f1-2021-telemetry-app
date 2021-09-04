@@ -1,4 +1,134 @@
-import { Component, h } from "@stencil/core"
+import { Component, h, Host } from "@stencil/core"
+
+export interface DataClassification {
+  driver_position: number
+  driver_team: string
+  driver_name: string
+  driver_country: string
+}
+
+const dataTable: DataClassification[] = [
+  {
+    driver_position: 1,
+    driver_team: "redbull",
+    driver_name: "Max Verstappen",
+    driver_country: "netherlands",
+  },
+  {
+    driver_position: 2,
+    driver_team: "redbull",
+    driver_name: "Sergio Perez",
+    driver_country: "mexico",
+  },
+  {
+    driver_position: 3,
+    driver_team: "alpine",
+    driver_name: "Fernando Alonso",
+    driver_country: "spain",
+  },
+  {
+    driver_position: 4,
+    driver_team: "alpine",
+    driver_name: "Esteban Ocon",
+    driver_country: "france",
+  },
+  {
+    driver_position: 5,
+    driver_team: "ferrari",
+    driver_name: "Carlos Sainz",
+    driver_country: "spain",
+  },
+  {
+    driver_position: 6,
+    driver_team: "ferrari",
+    driver_name: "Charles Leclerc",
+    driver_country: "monaco",
+  },
+  {
+    driver_position: 7,
+    driver_team: "mclaren",
+    driver_name: "Lando Norris",
+    driver_country: "great-britain",
+  },
+  {
+    driver_position: 8,
+    driver_team: "mclaren",
+    driver_name: "Daniel Ricciardo",
+    driver_country: "australia",
+  },
+  {
+    driver_position: 9,
+    driver_team: "mercedes",
+    driver_name: "Lewis Hamilton",
+    driver_country: "great-britain",
+  },
+  {
+    driver_position: 10,
+    driver_team: "mercedes",
+    driver_name: "Valteri Bottas",
+    driver_country: "finland",
+  },
+  {
+    driver_position: 11,
+    driver_team: "alfa-romeo",
+    driver_name: "Kimi Raikkonen",
+    driver_country: "finland",
+  },
+  {
+    driver_position: 12,
+    driver_team: "alfa-romeo",
+    driver_name: "Antonio Giovinazzi",
+    driver_country: "italy",
+  },
+  {
+    driver_position: 13,
+    driver_team: "haas",
+    driver_name: "Mick Schumacher",
+    driver_country: "germany",
+  },
+  {
+    driver_position: 14,
+    driver_team: "haas",
+    driver_name: "Nikita Mazepin",
+    driver_country: "russia",
+  },
+  {
+    driver_position: 15,
+    driver_team: "alpha-tauri",
+    driver_name: "Yuki Tsunoda",
+    driver_country: "japan",
+  },
+  {
+    driver_position: 16,
+    driver_team: "alpha-tauri",
+    driver_name: "Pierre Gasly",
+    driver_country: "france",
+  },
+  {
+    driver_position: 17,
+    driver_team: "williams",
+    driver_name: "George Rusell",
+    driver_country: "great-britain",
+  },
+  {
+    driver_position: 18,
+    driver_team: "williams",
+    driver_name: "Nicholas Latify",
+    driver_country: "canada",
+  },
+  {
+    driver_position: 19,
+    driver_team: "aston-martin",
+    driver_name: "Sebastian Vettel",
+    driver_country: "germany",
+  },
+  {
+    driver_position: 20,
+    driver_team: "aston-martin",
+    driver_name: "Lance Stroll",
+    driver_country: "canada",
+  },
+]
 
 @Component({
   tag: "f1-module-classification",
@@ -8,377 +138,9 @@ import { Component, h } from "@stencil/core"
 export class F1ModuleClassification {
   render() {
     return (
-      <table>
-        <thead>
-          <tr class="tr-head">
-            <th colSpan={6} class="f1-text-normal">
-              Classification
-            </th>
-          </tr>
-        </thead>
-        <tbody class="f1-text-normal">
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">1</div>
-            </td>
-            <td class="team-color">
-              <div class="color redbull" />
-            </td>
-            <td class="driver-name">
-              Max <span class="f1-text-bold">VERSTAPPEN</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/netherlands.jpg" />
-            </td>
-            <td class="driver-team">Red Bull Racing Honda</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/red-bull.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">2</div>
-            </td>
-            <td class="team-color">
-              <div class="color redbull" />
-            </td>
-            <td class="driver-name">
-              Sergio <span class="f1-text-bold">PEREZ</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/mexico.jpg" />
-            </td>
-            <td class="driver-team">Red Bull Racing Honda</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/red-bull.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">3</div>
-            </td>
-            <td class="team-color">
-              <div class="color alpine" />
-            </td>
-            <td class="driver-name">
-              Fernando <span class="f1-text-bold">ALONSO</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/spain.jpg" />
-            </td>
-            <td class="driver-team">Alpine Renault</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alpine.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">4</div>
-            </td>
-            <td class="team-color">
-              <div class="color alpine" />
-            </td>
-            <td class="driver-name">
-              Esteban <span class="f1-text-bold">OCON</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/france.jpg" />
-            </td>
-            <td class="driver-team">Alpine Renault</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alpine.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">5</div>
-            </td>
-            <td class="team-color">
-              <div class="color ferrari" />
-            </td>
-            <td class="driver-name">
-              Carlos <span class="f1-text-bold">SAINZ</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/spain.jpg" />
-            </td>
-            <td class="driver-team">Ferrari</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/ferrari.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">6</div>
-            </td>
-            <td class="team-color">
-              <div class="color ferrari" />
-            </td>
-            <td class="driver-name">
-              Charles <span class="f1-text-bold">LECLERC</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/monaco.jpg" />
-            </td>
-            <td class="driver-team">Ferrari</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/ferrari.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">7</div>
-            </td>
-            <td class="team-color">
-              <div class="color mclaren" />
-            </td>
-            <td class="driver-name">
-              Lando <span class="f1-text-bold">NORRIS</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/great-britain.jpg" />
-            </td>
-            <td class="driver-team">Mclaren Mercedes</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/mclaren.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">8</div>
-            </td>
-            <td class="team-color">
-              <div class="color mclaren" />
-            </td>
-            <td class="driver-name">
-              Daniel <span class="f1-text-bold">RICCIARDO</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/australia.jpg" />
-            </td>
-            <td class="driver-team">Mclaren Mercedes</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/mclaren.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">9</div>
-            </td>
-            <td class="team-color">
-              <div class="color mercedes" />
-            </td>
-            <td class="driver-name">
-              Lewis <span class="f1-text-bold">HAMILTON</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/great-britain.jpg" />
-            </td>
-            <td class="driver-team">Mercedes</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/mercedes.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">10</div>
-            </td>
-            <td class="team-color">
-              <div class="color mercedes" />
-            </td>
-            <td class="driver-name">
-              Valteri <span class="f1-text-bold">BOTTAS</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/finland.jpg" />
-            </td>
-            <td class="driver-team">Mercedes</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/mercedes.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">11</div>
-            </td>
-            <td class="team-color">
-              <div class="color alfa-romeo" />
-            </td>
-            <td class="driver-name">
-              Kimi <span class="f1-text-bold">RAIKKONEN</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/finland.jpg" />
-            </td>
-            <td class="driver-team">Alfa Romeo</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alfa-romeo.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">12</div>
-            </td>
-            <td class="team-color">
-              <div class="color alfa-romeo" />
-            </td>
-            <td class="driver-name">
-              Antonio <span class="f1-text-bold">GIOVINAZZI</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/italy.jpg" />
-            </td>
-            <td class="driver-team">Alfa Romeo</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alfa-romeo.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">13</div>
-            </td>
-            <td class="team-color">
-              <div class="color haas" />
-            </td>
-            <td class="driver-name">
-              Mick <span class="f1-text-bold">SCHUMACHER</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/germany.jpg" />
-            </td>
-            <td class="driver-team">Haas</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/haas.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">14</div>
-            </td>
-            <td class="team-color">
-              <div class="color haas" />
-            </td>
-            <td class="driver-name">
-              Nikita <span class="f1-text-bold">MAZEPIN</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/russia.jpg" />
-            </td>
-            <td class="driver-team">Haas</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/haas.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">15</div>
-            </td>
-            <td class="team-color">
-              <div class="color alpha-tauri" />
-            </td>
-            <td class="driver-name">
-              Yuki <span class="f1-text-bold">TSUNODA</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/japan.jpg" />
-            </td>
-            <td class="driver-team">Alpha Tauri</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alpha-tauri.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">16</div>
-            </td>
-            <td class="team-color">
-              <div class="color alpha-tauri" />
-            </td>
-            <td class="driver-name">
-              Pierre <span class="f1-text-bold">GASLY</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/france.jpg" />
-            </td>
-            <td class="driver-team">Alpha Tauri</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/alpha-tauri.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">17</div>
-            </td>
-            <td class="team-color">
-              <div class="color williams" />
-            </td>
-            <td class="driver-name">
-              George <span class="f1-text-bold">RUSELL</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/great-britain.jpg" />
-            </td>
-            <td class="driver-team">Williams</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/williams.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">18</div>
-            </td>
-            <td class="team-color">
-              <div class="color williams" />
-            </td>
-            <td class="driver-name">
-              Nicholas <span class="f1-text-bold">Latify</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/canada.jpg" />
-            </td>
-            <td class="driver-team">Williams</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/williams.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">19</div>
-            </td>
-            <td class="team-color">
-              <div class="color aston-martin" />
-            </td>
-            <td class="driver-name">
-              Sebastian <span class="f1-text-bold">VETTEL</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/germany.jpg" />
-            </td>
-            <td class="driver-team">Aston Martin</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/aston-martin.jpg" />
-            </td>
-          </tr>
-          <tr>
-            <td class="position">
-              <div class="square f1-text-bold">20</div>
-            </td>
-            <td class="team-color">
-              <div class="color aston-martin" />
-            </td>
-            <td class="driver-name">
-              Lance <span class="f1-text-bold">STROLL</span>
-            </td>
-            <td class="driver-country">
-              <img src="/assets/img/flags/canada.jpg" />
-            </td>
-            <td class="driver-team">Aston Martin</td>
-            <td class="logo-team">
-              <img src="/assets/img/teams/aston-martin.jpg" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <Host>
+        <f1-table-classification tableTitle="Classification" data={dataTable} />
+      </Host>
     )
   }
 }
