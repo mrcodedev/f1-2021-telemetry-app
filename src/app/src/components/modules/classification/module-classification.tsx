@@ -9,6 +9,8 @@ const dataTable: TableData[] = [
     driver_country: "netherlands",
     driver_team: "redbull",
     driver_team_logo: "redbull",
+    driver_team_lap: "1:08.885",
+    driver_tyre: "hard",
   },
   {
     driver_position: 2,
@@ -17,6 +19,8 @@ const dataTable: TableData[] = [
     driver_country: "mexico",
     driver_team: "redbull",
     driver_team_logo: "redbull",
+    driver_team_lap: "1:08.886",
+    driver_tyre: "soft",
   },
   {
     driver_position: 3,
@@ -25,6 +29,8 @@ const dataTable: TableData[] = [
     driver_country: "spain",
     driver_team: "alpine",
     driver_team_logo: "alpine",
+    driver_team_lap: "1:08.887",
+    driver_tyre: "intermediate",
   },
   {
     driver_position: 4,
@@ -33,6 +39,8 @@ const dataTable: TableData[] = [
     driver_country: "france",
     driver_team: "alpine",
     driver_team_logo: "alpine",
+    driver_team_lap: "1:08.888",
+    driver_tyre: "medium",
   },
   {
     driver_position: 5,
@@ -41,6 +49,8 @@ const dataTable: TableData[] = [
     driver_country: "spain",
     driver_team: "ferrari",
     driver_team_logo: "ferrari",
+    driver_team_lap: "1:08.889",
+    driver_tyre: "wet",
   },
   {
     driver_position: 6,
@@ -49,6 +59,8 @@ const dataTable: TableData[] = [
     driver_country: "monaco",
     driver_team: "ferrari",
     driver_team_logo: "ferrari",
+    driver_team_lap: "",
+    driver_tyre: "soft",
   },
   {
     driver_position: 7,
@@ -57,6 +69,8 @@ const dataTable: TableData[] = [
     driver_country: "great-britain",
     driver_team: "mclaren",
     driver_team_logo: "mclaren",
+    driver_team_lap: "1:08.891",
+    driver_tyre: "wet",
   },
   {
     driver_position: 8,
@@ -65,6 +79,8 @@ const dataTable: TableData[] = [
     driver_country: "australia",
     driver_team: "mclaren",
     driver_team_logo: "mclaren",
+    driver_team_lap: "1:08.892",
+    driver_tyre: "soft",
   },
   {
     driver_position: 9,
@@ -73,6 +89,8 @@ const dataTable: TableData[] = [
     driver_country: "great-britain",
     driver_team: "mercedes",
     driver_team_logo: "mercedes",
+    driver_team_lap: "1:08.893",
+    driver_tyre: "intermediate",
   },
   {
     driver_position: 10,
@@ -81,6 +99,8 @@ const dataTable: TableData[] = [
     driver_country: "finland",
     driver_team: "mercedes",
     driver_team_logo: "mercedes",
+    driver_team_lap: "1:08.894",
+    driver_tyre: "hard",
   },
   {
     driver_position: 11,
@@ -89,6 +109,8 @@ const dataTable: TableData[] = [
     driver_country: "finland",
     driver_team: "alfa-romeo",
     driver_team_logo: "alfa-romeo",
+    driver_team_lap: "1:08.895",
+    driver_tyre: "soft",
   },
   {
     driver_position: 12,
@@ -97,6 +119,8 @@ const dataTable: TableData[] = [
     driver_country: "italy",
     driver_team: "alfa-romeo",
     driver_team_logo: "alfa-romeo",
+    driver_team_lap: "1:08.896",
+    driver_tyre: "medium",
   },
   {
     driver_position: 13,
@@ -105,6 +129,8 @@ const dataTable: TableData[] = [
     driver_country: "germany",
     driver_team: "haas",
     driver_team_logo: "haas",
+    driver_team_lap: "1:08.897",
+    driver_tyre: "hard",
   },
   {
     driver_position: 14,
@@ -113,6 +139,8 @@ const dataTable: TableData[] = [
     driver_country: "russia",
     driver_team: "haas",
     driver_team_logo: "haas",
+    driver_team_lap: "",
+    driver_tyre: "intermediate",
   },
   {
     driver_position: 15,
@@ -121,6 +149,8 @@ const dataTable: TableData[] = [
     driver_country: "japan",
     driver_team: "alpha-tauri",
     driver_team_logo: "alpha-tauri",
+    driver_team_lap: "1:08.899",
+    driver_tyre: "wet",
   },
   {
     driver_position: 16,
@@ -129,6 +159,8 @@ const dataTable: TableData[] = [
     driver_country: "france",
     driver_team: "alpha-tauri",
     driver_team_logo: "alpha-tauri",
+    driver_team_lap: "1:08.900",
+    driver_tyre: "medium",
   },
   {
     driver_position: 17,
@@ -137,6 +169,8 @@ const dataTable: TableData[] = [
     driver_country: "great-britain",
     driver_team: "williams",
     driver_team_logo: "williams",
+    driver_team_lap: "1:08.901",
+    driver_tyre: "hard",
   },
   {
     driver_position: 18,
@@ -145,6 +179,8 @@ const dataTable: TableData[] = [
     driver_country: "canada",
     driver_team: "williams",
     driver_team_logo: "williams",
+    driver_team_lap: "",
+    driver_tyre: "intermediate",
   },
   {
     driver_position: 19,
@@ -153,6 +189,8 @@ const dataTable: TableData[] = [
     driver_country: "germany",
     driver_team: "aston-martin",
     driver_team_logo: "aston-martin",
+    driver_team_lap: "1:08.903",
+    driver_tyre: "soft",
   },
   {
     driver_position: 20,
@@ -161,6 +199,8 @@ const dataTable: TableData[] = [
     driver_country: "canada",
     driver_team: "aston-martin",
     driver_team_logo: "aston-martin",
+    driver_team_lap: "1:08.904",
+    driver_tyre: "medium",
   },
 ]
 
@@ -182,6 +222,12 @@ const columns: TableColumns[] = [
   },
   {
     prop: "driver_team_logo",
+  },
+  {
+    prop: "driver_team_lap",
+  },
+  {
+    prop: "driver_tyre",
   },
 ]
 

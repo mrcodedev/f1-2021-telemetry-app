@@ -1,5 +1,6 @@
 import { Countries } from "./countries";
 import { TeamName } from "./teams";
+import { TyreType } from "./tyres";
 
 export interface TableData {
   driver_position?: number
@@ -9,6 +10,7 @@ export interface TableData {
   driver_team?: TeamName 
   driver_team_logo?: TeamName
   driver_team_lap?: string
+  driver_tyre?: TyreType
 }
 
 export interface TableColumns {
@@ -23,3 +25,4 @@ export type TableProps =
 | "driver_team"
 | "driver_team_logo"
 | "driver_team_lap"
+| "driver_tyre"

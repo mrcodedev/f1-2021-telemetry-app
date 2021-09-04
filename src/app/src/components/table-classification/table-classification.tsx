@@ -1,7 +1,14 @@
 import { Countries } from "@models/countries"
 import { TableColumns, TableData, TableProps } from "@models/table"
 import { TeamName } from "@models/teams"
-import { Component, ComponentInterface, h, JSX, Prop } from "@stencil/core"
+import {
+  Component,
+  ComponentInterface,
+  h,
+  Host,
+  JSX,
+  Prop,
+} from "@stencil/core"
 import { getNameTeamWithMotor } from "@utils/teams"
 
 @Component({
@@ -16,10 +23,12 @@ export class F1TableClassification implements ComponentInterface {
 
   render(): JSX.Element {
     return (
-      <table>
-        {this.renderHeader()}
-        {this.renderBody()}
-      </table>
+      <Host>
+        <table>
+          {this.renderHeader()}
+          {this.renderBody()}
+        </table>
+      </Host>
     )
   }
 
@@ -77,8 +86,13 @@ export class F1TableClassification implements ComponentInterface {
         )
       },
       driver_name: () => {
-        if (typeof data === "string") {
-          const name = data?.split(" ")
+        if (typeof data !== "string") {
+          return
+        }
+
+        const name = data?.split(" ")
+
+        if (name.length > 1) {
           return (
             <td class="driver_name">
               {name[0]}{" "}
@@ -86,7 +100,8 @@ export class F1TableClassification implements ComponentInterface {
             </td>
           )
         }
-        return <td class="driver_name">{data}</td>
+
+        return <td class="driver_name">{data.toUpperCase()}</td>
       },
       driver_country: () => {
         return (
@@ -108,10 +123,20 @@ export class F1TableClassification implements ComponentInterface {
         )
       },
       driver_team_lap: () => {
+        if (!data) {
+          return <td class="driver_time_lap">--:--.---</td>
+        }
         return <td class="driver_time_lap">{data}</td>
       },
+      driver_tyre: () => {
+        return (
+          <td class="driver_tyre">
+            <img src={`/assets/img/tyres/${data}.png`} alt={String(data)} />
+          </td>
+        )
+      },
       default: () => {
-        return <td></td>
+        return <td>{data}</td>
       },
     }
 
