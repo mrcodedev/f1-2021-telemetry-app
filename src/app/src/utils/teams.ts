@@ -4,7 +4,7 @@ export const getNameTeamWithMotor = (team?: TeamName) => {
   if(!team) {
     return
   }
-  
+
   const teams = {
     "redbull": "Red Bull Racing Honda",
     "mercedes": "Mercedes",
@@ -15,8 +15,9 @@ export const getNameTeamWithMotor = (team?: TeamName) => {
     "alpha-tauri": "AlphaTauri Honda",
     "williams": "Williams Mercedes",
     "aston-martin": "Aston Martin Mercedes",
-    "haas": "Haas Ferrari"
+    "haas": "Haas Ferrari",
+    "default": ""
   }
 
-  return teams[team]
+  return teams[team] || teams["default"]
 }

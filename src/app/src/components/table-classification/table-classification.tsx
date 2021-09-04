@@ -110,8 +110,11 @@ export class F1TableClassification implements ComponentInterface {
       driver_team_lap: () => {
         return <td class="driver_time_lap">{data}</td>
       },
+      default: () => {
+        return <td></td>
+      },
     }
 
-    return tableTypeData[prop]()
+    return tableTypeData[prop]() || tableTypeData["default"]
   }
 }
