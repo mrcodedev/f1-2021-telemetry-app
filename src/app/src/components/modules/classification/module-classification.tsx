@@ -1,4 +1,4 @@
-import { Component, h, Host } from "@stencil/core"
+import { Component, ComponentInterface, h, Host } from "@stencil/core"
 
 export interface DataClassification {
   driver_position: number
@@ -135,7 +135,7 @@ const dataTable: DataClassification[] = [
   styleUrl: "module-classification.pcss",
   scoped: true,
 })
-export class F1ModuleClassification {
+export class F1ModuleClassification implements ComponentInterface {
   render() {
     return (
       <Host>
