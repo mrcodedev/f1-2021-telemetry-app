@@ -27,13 +27,19 @@ Use local direction IP, not activate retransmition UDP mode, consumes a lot of r
 When you have UDP telemetry activated in the F1 2021 game, we can start the WebSocket Server.
 
 ```bash
-npm run ws-server:start
+npm run start:ws
 ```
 
 After this we must start the F1 UDP clients, and WebSocket
 
 ```bash
-npm run start:server
+npm run start:client
+```
+
+Or execute Server, Clients and App:
+
+```bash
+npm run start:all
 ```
 
 You can now see the information that the game gives you.
