@@ -116,17 +116,26 @@ export class F1TableClassification implements ComponentInterface {
         )
       },
       driver_team_logo: () => {
-        return (
-          <td class="driver_team_logo">
-            <img src={`/assets/img/teams/${data}.jpg`} alt={String(data)} />
-          </td>
-        )
+        if (data !== "default") {
+          return (
+            <td class="driver_team_logo">
+              <img src={`/assets/img/teams/${data}.jpg`} alt={String(data)} />
+            </td>
+          )
+        }
+        return <td class="driver_team_logo"></td>
       },
-      driver_team_lap: () => {
+      driver_time_lap: () => {
         if (!data) {
           return <td class="driver_time_lap">--:--.---</td>
         }
         return <td class="driver_time_lap">{data}</td>
+      },
+      driver_time_difference: () => {
+        if (data) {
+          return <td class="driver_time_difference">+ {data}</td>
+        }
+        return <td class="driver_time_difference">-</td>
       },
       driver_tyre: () => {
         return (

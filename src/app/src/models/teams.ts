@@ -9,3 +9,4 @@ export type TeamName =
 | "williams"
 | "aston-martin"
 | "haas"
+| "default"

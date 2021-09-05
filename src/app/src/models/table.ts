@@ -9,10 +9,11 @@ export interface TableData {
   driver_country?: Countries
   driver_team?: TeamName 
   driver_team_logo?: TeamName
-  driver_team_lap?: string
+  driver_time_lap?: string
   driver_tyre?: TyreType
   driver_penalty?: number
   driver_finish?: boolean
+  driver_time_difference?: string
 }
 
 export interface TableColumns {
@@ -26,7 +27,8 @@ export type TableProps =
 | "driver_country"
 | "driver_team"
 | "driver_team_logo"
-| "driver_team_lap"
+| "driver_time_lap"
 | "driver_tyre"
 | "driver_penalty"
 | "driver_finish"
+| "driver_time_difference"
