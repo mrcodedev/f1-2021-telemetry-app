@@ -3,6 +3,7 @@ import { Component, ComponentInterface, h, Host } from "@stencil/core"
 
 const dataTable: TableData[] = [
   {
+    driver_fast_lap: true,
     driver_finish: true,
     driver_position: 1,
     driver_team_color: "redbull",
@@ -16,6 +17,7 @@ const dataTable: TableData[] = [
     driver_penalty: 0,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 2,
     driver_team_color: "redbull",
@@ -29,6 +31,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 3,
     driver_team_color: "alpine",
@@ -42,6 +45,7 @@ const dataTable: TableData[] = [
     driver_penalty: 0,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 4,
     driver_team_color: "alpine",
@@ -55,6 +59,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 5,
     driver_team_color: "ferrari",
@@ -68,6 +73,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 6,
     driver_team_color: "ferrari",
@@ -81,6 +87,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 7,
     driver_team_color: "mclaren",
@@ -94,6 +101,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 8,
     driver_team_color: "mclaren",
@@ -107,6 +115,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 9,
     driver_team_color: "mercedes",
@@ -120,6 +129,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 10,
     driver_team_color: "mercedes",
@@ -133,6 +143,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 11,
     driver_team_color: "alfa-romeo",
@@ -146,6 +157,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 12,
     driver_team_color: "alfa-romeo",
@@ -159,6 +171,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 13,
     driver_team_color: "haas",
@@ -172,6 +185,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 14,
     driver_team_color: "haas",
@@ -185,6 +199,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 15,
     driver_team_color: "alpha-tauri",
@@ -198,6 +213,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 16,
     driver_team_color: "alpha-tauri",
@@ -211,6 +227,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 17,
     driver_team_color: "williams",
@@ -224,6 +241,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 18,
     driver_team_color: "williams",
@@ -237,6 +255,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 19,
     driver_team_color: "aston-martin",
@@ -250,6 +269,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 20,
     driver_team_color: "aston-martin",
@@ -263,6 +283,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_fast_lap: false,
     driver_finish: true,
     driver_position: 21,
     driver_team_color: "default",
@@ -278,6 +299,9 @@ const dataTable: TableData[] = [
 ]
 
 const columns: TableColumns[] = [
+  {
+    prop: "driver_fast_lap",
+  },
   {
     prop: "driver_finish",
   },

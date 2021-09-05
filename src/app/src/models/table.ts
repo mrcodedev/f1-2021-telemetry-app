@@ -14,6 +14,7 @@ export interface TableData {
   driver_penalty?: number
   driver_finish?: boolean
   driver_time_difference?: string
+  driver_fast_lap: boolean
 }
 
 export interface TableColumns {
@@ -32,3 +33,4 @@ export type TableProps =
 | "driver_penalty"
 | "driver_finish"
 | "driver_time_difference"
+| "driver_fast_lap"

@@ -173,6 +173,20 @@ export class F1TableClassification implements ComponentInterface {
           </td>
         )
       },
+      driver_fast_lap: () => {
+        if (data) {
+          return (
+            <td class="driver_fast_lap">
+              <img
+                src={`/assets/img/icons/chronometer.png`}
+                alt="fastlap driver"
+              />
+            </td>
+          )
+        }
+
+        return " "
+      },
       default: () => {
         return <td>{data}</td>
       },
