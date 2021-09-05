@@ -187,6 +187,29 @@ export class F1TableClassification implements ComponentInterface {
 
         return " "
       },
+      driver_laps: () => {
+        if (data && data > 0) {
+          return <td class="driver_laps">{data} laps</td>
+        }
+        return <td class="driver_laps">0 laps</td>
+      },
+      driver_positions_achieved: () => {
+        if (data === "up") {
+          return (
+            <td class="driver_positions_achieved">
+              <img src={`/assets/img/icons/up.png`} alt="gained positions" />
+            </td>
+          )
+        }
+        if (data === "down") {
+          return (
+            <td class="driver_positions_achieved">
+              <img src={`/assets/img/icons/down.png`} alt="loosed positions" />
+            </td>
+          )
+        }
+        return <td class="driver_positions_achieved">-</td>
+      },
       default: () => {
         return <td>{data}</td>
       },

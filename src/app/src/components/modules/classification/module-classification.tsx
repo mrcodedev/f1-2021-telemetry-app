@@ -15,6 +15,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "",
     driver_tyre: "hard",
     driver_penalty: 0,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -29,6 +31,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "up",
   },
   {
     driver_fast_lap: false,
@@ -43,6 +47,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "intermediate",
     driver_penalty: 0,
+    driver_laps: 10,
+    driver_positions_achieved: "down",
   },
   {
     driver_fast_lap: false,
@@ -57,6 +63,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "medium",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -71,6 +79,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "wet",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -85,6 +95,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -99,6 +111,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "wet",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "up",
   },
   {
     driver_fast_lap: false,
@@ -113,6 +127,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "up",
   },
   {
     driver_fast_lap: false,
@@ -127,6 +143,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "intermediate",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "down",
   },
   {
     driver_fast_lap: false,
@@ -141,6 +159,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "hard",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "down",
   },
   {
     driver_fast_lap: false,
@@ -155,6 +175,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -169,6 +191,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "medium",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "down",
   },
   {
     driver_fast_lap: false,
@@ -183,6 +207,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "hard",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "up",
   },
   {
     driver_fast_lap: false,
@@ -197,6 +223,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "intermediate",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -211,6 +239,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "wet",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -225,6 +255,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "medium",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -239,6 +271,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "hard",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -253,6 +287,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "intermediate",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "none",
   },
   {
     driver_fast_lap: false,
@@ -267,6 +303,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "up",
   },
   {
     driver_fast_lap: false,
@@ -281,6 +319,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "medium",
     driver_penalty: 2,
+    driver_laps: 10,
+    driver_positions_achieved: "down",
   },
   {
     driver_fast_lap: false,
@@ -295,6 +335,8 @@ const dataTable: TableData[] = [
     driver_time_difference: "0.999",
     driver_tyre: "soft",
     driver_penalty: 2,
+    driver_laps: 0,
+    driver_positions_achieved: "down",
   },
 ]
 
@@ -307,6 +349,9 @@ const columns: TableColumns[] = [
   },
   {
     prop: "driver_position",
+  },
+  {
+    prop: "driver_positions_achieved",
   },
   {
     prop: "driver_team_color",
@@ -334,6 +379,9 @@ const columns: TableColumns[] = [
   },
   {
     prop: "driver_penalty",
+  },
+  {
+    prop: "driver_laps",
   },
 ]
 

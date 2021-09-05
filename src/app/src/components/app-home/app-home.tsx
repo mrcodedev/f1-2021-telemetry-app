@@ -1,3 +1,4 @@
+import { routerService } from "@services/router"
 import { Component, h } from "@stencil/core"
 
 @Component({
@@ -14,8 +15,13 @@ export class AppHome {
           entire apps all with web components using Stencil! Check out our docs
           on <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
-
         <f1-websocket />
+        <button
+          onClick={() => {
+            routerService.go("/classification")
+          }}>
+          Clasificación
+        </button>
       </div>
     )
   }

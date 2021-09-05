@@ -14,8 +14,16 @@ export interface TableData {
   driver_penalty?: number
   driver_finish?: boolean
   driver_time_difference?: string
-  driver_fast_lap: boolean
+  driver_fast_lap?: boolean
+  driver_laps?: number
+  driver_positions_achieved?: TablePositionsAchieved
 }
+
+export type TablePositionsAchieved =
+  | "up"
+  | "none"
+  | "down"
+
 
 export interface TableColumns {
   prop: TableProps
@@ -34,3 +42,5 @@ export type TableProps =
 | "driver_finish"
 | "driver_time_difference"
 | "driver_fast_lap"
+| "driver_laps"
+| "driver_positions_achieved"
