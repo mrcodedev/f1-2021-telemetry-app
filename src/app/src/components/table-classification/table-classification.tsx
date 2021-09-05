@@ -101,7 +101,7 @@ export class F1TableClassification implements ComponentInterface {
           )
         }
 
-        return <td class="driver_name">{data.toUpperCase()}</td>
+        return <td class="driver_name f1-text-bold">{data}</td>
       },
       driver_country: () => {
         return (
@@ -132,6 +132,21 @@ export class F1TableClassification implements ComponentInterface {
         return (
           <td class="driver_tyre">
             <img src={`/assets/img/tyres/${data}.png`} alt={String(data)} />
+          </td>
+        )
+      },
+      driver_penalty: () => {
+        return (
+          <td class="driver_penalty">
+            {data ? (
+              <img
+                src={`/assets/img/race-flags/penalty.png`}
+                alt={String(data)}
+              />
+            ) : (
+              ""
+            )}
+            {data ? <div class="time_penalty">{data}s</div> : ""}
           </td>
         )
       },

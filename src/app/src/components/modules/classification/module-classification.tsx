@@ -11,6 +11,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "redbull",
     driver_team_lap: "1:08.885",
     driver_tyre: "hard",
+    driver_penalty: 0,
   },
   {
     driver_position: 2,
@@ -21,6 +22,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "redbull",
     driver_team_lap: "1:08.886",
     driver_tyre: "soft",
+    driver_penalty: 2,
   },
   {
     driver_position: 3,
@@ -31,6 +33,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alpine",
     driver_team_lap: "1:08.887",
     driver_tyre: "intermediate",
+    driver_penalty: 0,
   },
   {
     driver_position: 4,
@@ -41,6 +44,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alpine",
     driver_team_lap: "1:08.888",
     driver_tyre: "medium",
+    driver_penalty: 2,
   },
   {
     driver_position: 5,
@@ -51,6 +55,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "ferrari",
     driver_team_lap: "1:08.889",
     driver_tyre: "wet",
+    driver_penalty: 2,
   },
   {
     driver_position: 6,
@@ -61,6 +66,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "ferrari",
     driver_team_lap: "",
     driver_tyre: "soft",
+    driver_penalty: 2,
   },
   {
     driver_position: 7,
@@ -71,6 +77,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "mclaren",
     driver_team_lap: "1:08.891",
     driver_tyre: "wet",
+    driver_penalty: 2,
   },
   {
     driver_position: 8,
@@ -81,6 +88,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "mclaren",
     driver_team_lap: "1:08.892",
     driver_tyre: "soft",
+    driver_penalty: 2,
   },
   {
     driver_position: 9,
@@ -91,6 +99,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "mercedes",
     driver_team_lap: "1:08.893",
     driver_tyre: "intermediate",
+    driver_penalty: 2,
   },
   {
     driver_position: 10,
@@ -101,6 +110,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "mercedes",
     driver_team_lap: "1:08.894",
     driver_tyre: "hard",
+    driver_penalty: 2,
   },
   {
     driver_position: 11,
@@ -111,6 +121,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alfa-romeo",
     driver_team_lap: "1:08.895",
     driver_tyre: "soft",
+    driver_penalty: 2,
   },
   {
     driver_position: 12,
@@ -121,6 +132,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alfa-romeo",
     driver_team_lap: "1:08.896",
     driver_tyre: "medium",
+    driver_penalty: 2,
   },
   {
     driver_position: 13,
@@ -131,6 +143,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "haas",
     driver_team_lap: "1:08.897",
     driver_tyre: "hard",
+    driver_penalty: 2,
   },
   {
     driver_position: 14,
@@ -141,6 +154,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "haas",
     driver_team_lap: "",
     driver_tyre: "intermediate",
+    driver_penalty: 2,
   },
   {
     driver_position: 15,
@@ -151,6 +165,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alpha-tauri",
     driver_team_lap: "1:08.899",
     driver_tyre: "wet",
+    driver_penalty: 2,
   },
   {
     driver_position: 16,
@@ -161,6 +176,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "alpha-tauri",
     driver_team_lap: "1:08.900",
     driver_tyre: "medium",
+    driver_penalty: 2,
   },
   {
     driver_position: 17,
@@ -171,6 +187,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "williams",
     driver_team_lap: "1:08.901",
     driver_tyre: "hard",
+    driver_penalty: 2,
   },
   {
     driver_position: 18,
@@ -181,6 +198,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "williams",
     driver_team_lap: "",
     driver_tyre: "intermediate",
+    driver_penalty: 2,
   },
   {
     driver_position: 19,
@@ -191,6 +209,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "aston-martin",
     driver_team_lap: "1:08.903",
     driver_tyre: "soft",
+    driver_penalty: 2,
   },
   {
     driver_position: 20,
@@ -201,6 +220,7 @@ const dataTable: TableData[] = [
     driver_team_logo: "aston-martin",
     driver_team_lap: "1:08.904",
     driver_tyre: "medium",
+    driver_penalty: 2,
   },
 ]
 
@@ -228,6 +248,9 @@ const columns: TableColumns[] = [
   },
   {
     prop: "driver_tyre",
+  },
+  {
+    prop: "driver_penalty",
   },
 ]
 

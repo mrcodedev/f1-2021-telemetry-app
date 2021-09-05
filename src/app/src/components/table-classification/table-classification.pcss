@@ -92,6 +92,7 @@ table {
           min-width: 50px;
 
           & img {
+            vertical-align: middle;
             height: 20px;
           }
         }
@@ -106,6 +107,7 @@ table {
           min-width: 80px;
           padding: 0px 10px 0px 0px;
           & img {
+            vertical-align: middle;
             width: 30px;
             height: 30px;
           }
@@ -120,8 +122,21 @@ table {
           padding: 0px 5px 0px 0px;
 
           & img {
+            vertical-align: middle;
             width: 30px;
             height: 30px;
+          }
+        }
+        &.driver_penalty {
+          display: flex;
+          align-items: center;
+          width: 80px;
+          min-width: 0px;
+          & img {
+            vertical-align: middle;
+          }
+          & .time_penalty {
+            padding-top: 2px;
           }
         }
       }
