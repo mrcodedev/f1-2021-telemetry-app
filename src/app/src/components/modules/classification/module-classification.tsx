@@ -3,6 +3,7 @@ import { Component, ComponentInterface, h, Host } from "@stencil/core"
 
 const dataTable: TableData[] = [
   {
+    driver_finish: true,
     driver_position: 1,
     driver_team_color: "redbull",
     driver_name: "Max Verstappen",
@@ -14,6 +15,7 @@ const dataTable: TableData[] = [
     driver_penalty: 0,
   },
   {
+    driver_finish: true,
     driver_position: 2,
     driver_team_color: "redbull",
     driver_name: "Sergio Perez",
@@ -25,6 +27,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 3,
     driver_team_color: "alpine",
     driver_name: "Fernando Alonso",
@@ -36,6 +39,7 @@ const dataTable: TableData[] = [
     driver_penalty: 0,
   },
   {
+    driver_finish: true,
     driver_position: 4,
     driver_team_color: "alpine",
     driver_name: "Esteban Ocon",
@@ -47,6 +51,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 5,
     driver_team_color: "ferrari",
     driver_name: "Carlos Sainz",
@@ -58,6 +63,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 6,
     driver_team_color: "ferrari",
     driver_name: "Charles Leclerc",
@@ -69,6 +75,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 7,
     driver_team_color: "mclaren",
     driver_name: "Lando Norris",
@@ -80,6 +87,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 8,
     driver_team_color: "mclaren",
     driver_name: "Daniel Ricciardo",
@@ -91,6 +99,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 9,
     driver_team_color: "mercedes",
     driver_name: "Lewis Hamilton",
@@ -102,6 +111,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 10,
     driver_team_color: "mercedes",
     driver_name: "Valteri Bottas",
@@ -113,6 +123,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 11,
     driver_team_color: "alfa-romeo",
     driver_name: "Kimi Raikkonen",
@@ -124,6 +135,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 12,
     driver_team_color: "alfa-romeo",
     driver_name: "Antonio Giovinazzi",
@@ -135,6 +147,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 13,
     driver_team_color: "haas",
     driver_name: "Mick Schumacher",
@@ -146,6 +159,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 14,
     driver_team_color: "haas",
     driver_name: "Nikita Mazepin",
@@ -157,6 +171,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 15,
     driver_team_color: "alpha-tauri",
     driver_name: "Yuki Tsunoda",
@@ -168,6 +183,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 16,
     driver_team_color: "alpha-tauri",
     driver_name: "Pierre Gasly",
@@ -179,6 +195,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 17,
     driver_team_color: "williams",
     driver_name: "George Rusell",
@@ -190,6 +207,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 18,
     driver_team_color: "williams",
     driver_name: "Nicholas Latify",
@@ -201,6 +219,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 19,
     driver_team_color: "aston-martin",
     driver_name: "Sebastian Vettel",
@@ -212,6 +231,7 @@ const dataTable: TableData[] = [
     driver_penalty: 2,
   },
   {
+    driver_finish: true,
     driver_position: 20,
     driver_team_color: "aston-martin",
     driver_name: "Lance Stroll",
@@ -225,6 +245,9 @@ const dataTable: TableData[] = [
 ]
 
 const columns: TableColumns[] = [
+  {
+    prop: "driver_finish",
+  },
   {
     prop: "driver_position",
   },

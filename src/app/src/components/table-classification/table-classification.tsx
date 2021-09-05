@@ -68,7 +68,7 @@ export class F1TableClassification implements ComponentInterface {
 
   private tableTableData(
     prop: TableProps,
-    data?: string | number | TeamName | Countries
+    data?: string | number | TeamName | Countries | boolean
   ) {
     const tableTypeData = {
       driver_position: () => {
@@ -147,6 +147,20 @@ export class F1TableClassification implements ComponentInterface {
               ""
             )}
             {data ? <div class="time_penalty">{data}s</div> : ""}
+          </td>
+        )
+      },
+      driver_finish: () => {
+        return (
+          <td class="driver_finish">
+            {data ? (
+              <img
+                src={`/assets/img/race-flags/finish.png`}
+                alt={String(data)}
+              />
+            ) : (
+              ""
+            )}
           </td>
         )
       },

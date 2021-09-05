@@ -12,6 +12,7 @@ export interface TableData {
   driver_team_lap?: string
   driver_tyre?: TyreType
   driver_penalty?: number
+  driver_finish?: boolean
 }
 
 export interface TableColumns {
@@ -28,3 +29,4 @@ export type TableProps =
 | "driver_team_lap"
 | "driver_tyre"
 | "driver_penalty"
+| "driver_finish"
