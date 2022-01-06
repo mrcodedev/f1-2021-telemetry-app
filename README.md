@@ -773,7 +773,7 @@ struct CarDamageData
     uint8     m_engineICEWear;                    // Engine wear ICE (percentage)
     uint8     m_engineMGUKWear;                   // Engine wear MGU-K (percentage)
     uint8     m_engineTCWear;                     // Engine wear TC (percentage)
-}
+};
 
 struct PacketCarDamageData
 {
