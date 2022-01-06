@@ -226,7 +226,7 @@ struct PacketMotionData
 {
     PacketHeader    m_header;                 // Header
 
-    CarMotionData   m_carMotionData:[22];     // Data for all cars on track
+    CarMotionData   m_carMotionData[22];     // Data for all cars on track
                                                 // Extra player car ONLY data
     float         m_suspensionPosition[4];       // Note: All wheel arrays have the following order:
     float         m_suspensionVelocity[4];       // RL, RR, FL, FR
@@ -773,7 +773,7 @@ struct CarDamageData
     uint8     m_engineICEWear;                    // Engine wear ICE (percentage)
     uint8     m_engineMGUKWear;                   // Engine wear MGU-K (percentage)
     uint8     m_engineTCWear;                     // Engine wear TC (percentage)
-}
+};
 
 struct PacketCarDamageData
 {
